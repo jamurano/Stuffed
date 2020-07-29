@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Puni the Panda 4.0.ma
-//Last modified: Tue, Jul 28, 2020 09:01:22 PM
+//Last modified: Tue, Jul 28, 2020 09:26:51 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "BaseRig1" -rfn "BaseRigRN1" -op "v=0;p=17;f=0" -typ "mayaAscii"
 		 "/Users/Katie/StuffedAgain/Stuffed/StuffedGame/Assets/Maya/scenes/BaseRig.ma";
@@ -15,18 +15,18 @@ fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Mac OS X 10.15.6";
 fileInfo "license" "student";
-fileInfo "UUID" "28D4E3DC-2348-4FC1-94D7-A9AE2C9DF4AB";
+fileInfo "UUID" "C4A87121-8048-51EF-C4B7-8B962BC216FF";
 createNode transform -s -n "persp";
 	rename -uid "425F33C5-074E-0DDA-57FF-A083BEB032D3";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.3773589085877178 3.901496398070087 4.5860119043880321 ;
-	setAttr ".r" -type "double3" 353.0616469183451 12610.999999914076 1.0125262975876128e-16 ;
+	setAttr ".t" -type "double3" 6.0981088174232942 4.761187557625469 14.179951629022881 ;
+	setAttr ".r" -type "double3" 350.66164693298521 13341.399999995641 -4.2700913135135735e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "77E8AA9E-234E-68FC-26D2-21B85028178A";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 4.8193629422707565;
+	setAttr ".coi" 15.260935438574954;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -8086,7 +8086,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 452\n            -height 179\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
 		+ "            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 1\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
 		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n"
-		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 464\n            -height 403\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 910\n            -height 401\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
 		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"<function selCom at 0x7f29c5c04aa0>\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n"
 		+ "            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n"
@@ -8109,8 +8109,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 464\\n    -height 403\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 464\\n    -height 403\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 910\\n    -height 401\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 910\\n    -height 401\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -8477,7 +8477,7 @@ createNode reference -n "BaseRigRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BaseRigRN1"
 		"BaseRigRN1" 0
-		"BaseRigRN1" 229
+		"BaseRigRN1" 245
 		2 "|BaseRig1:Root_J|BaseRig1:Pelvis_J" "useObjectColor" " 1"
 		2 "|BaseRig1:Root_J|BaseRig1:Pelvis_J" "objectColor" " 0"
 		2 "|BaseRig1:Root_J|BaseRig1:Pelvis_J" "translate" " -type \"double3\" 0 0 0"
@@ -8586,7 +8586,7 @@ createNode reference -n "BaseRigRN1";
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j" 
 		"translateY" " -av"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j" 
-		"lockInfluenceWeights" " 0"
+		"lockInfluenceWeights" " 1"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J" 
 		"translate" " -type \"double3\" 0.58923177826553408 0 0"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J" 
@@ -8620,17 +8620,17 @@ createNode reference -n "BaseRigRN1";
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK" 
 		"lockInfluenceWeights" " 0"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK|BaseRig1:Elbow_J_L_RK" 
-		"lockInfluenceWeights" " 1"
+		"lockInfluenceWeights" " 0"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK|BaseRig1:Elbow_J_L_RK|BaseRig1:Wrist_J_L_RK" 
-		"lockInfluenceWeights" " 1"
+		"lockInfluenceWeights" " 0"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_R|BaseRig1:Shoulder_J_R2_RK|BaseRig1:Shoulder_J_R_RK" 
-		"lockInfluenceWeights" " 1"
+		"lockInfluenceWeights" " 0"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_R|BaseRig1:Shoulder_J_R2_RK|BaseRig1:Shoulder_J_R_RK|BaseRig1:Elbow_J_R_RK" 
-		"lockInfluenceWeights" " 1"
+		"lockInfluenceWeights" " 0"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_R|BaseRig1:Shoulder_J_R2_RK|BaseRig1:Shoulder_J_R_RK|BaseRig1:Elbow_J_R_RK|BaseRig1:Wrist_J_R_RK" 
 		"preferredAngle" " -type \"double3\" 0 0 0"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_R|BaseRig1:Shoulder_J_R2_RK|BaseRig1:Shoulder_J_R_RK|BaseRig1:Elbow_J_R_RK|BaseRig1:Wrist_J_R_RK" 
-		"lockInfluenceWeights" " 1"
+		"lockInfluenceWeights" " 0"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl" "translate" " -type \"double3\" 0 0 0"
 		
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl" "translateX" " -k 0 -cb 1"
@@ -8729,6 +8729,14 @@ createNode reference -n "BaseRigRN1";
 		"rotateY" " -av"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:head_J_GRP|BaseRig1:head_J_CTRL|BaseRig1:Eye_J_R_GRP|BaseRig1:Eye_J_R_CTRL" 
 		"rotateX" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL" 
+		"rotateZ" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL" 
+		"rotateY" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL" 
+		"rotateX" " -av"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL|BaseRig1:Arm_L_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_L_GRP|BaseRig1:Shoulder_J_L_CTRL" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL|BaseRig1:Arm_L_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_L_GRP|BaseRig1:Shoulder_J_L_CTRL" 
@@ -8744,6 +8752,30 @@ createNode reference -n "BaseRigRN1";
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL|BaseRig1:Arm_L_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_L_GRP|BaseRig1:Shoulder_J_L_CTRL|BaseRig1:Elbow_J_L_GRP|BaseRig1:Elbow_J_L_CTRL" 
 		"rotateY" " -av"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL|BaseRig1:Arm_L_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_L_GRP|BaseRig1:Shoulder_J_L_CTRL|BaseRig1:Elbow_J_L_GRP|BaseRig1:Elbow_J_L_CTRL" 
+		"rotateX" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL|BaseRig1:Arm_L_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_L_GRP|BaseRig1:Shoulder_J_L_CTRL|BaseRig1:Elbow_J_L_GRP|BaseRig1:Elbow_J_L_CTRL|BaseRig1:Wrist_J_L_GRP|BaseRig1:Wrist_J_L_CTRL" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL|BaseRig1:Arm_L_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_L_GRP|BaseRig1:Shoulder_J_L_CTRL|BaseRig1:Elbow_J_L_GRP|BaseRig1:Elbow_J_L_CTRL|BaseRig1:Wrist_J_L_GRP|BaseRig1:Wrist_J_L_CTRL" 
+		"rotateZ" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL|BaseRig1:Arm_L_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_L_GRP|BaseRig1:Shoulder_J_L_CTRL|BaseRig1:Elbow_J_L_GRP|BaseRig1:Elbow_J_L_CTRL|BaseRig1:Wrist_J_L_GRP|BaseRig1:Wrist_J_L_CTRL" 
+		"rotateY" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_L_GRP|BaseRig1:Clavical_J_L_CTRL|BaseRig1:Shoulder_J_L2_GRP|BaseRig1:Shoulder_J_L2_CTRL|BaseRig1:Arm_L_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_L_GRP|BaseRig1:Shoulder_J_L_CTRL|BaseRig1:Elbow_J_L_GRP|BaseRig1:Elbow_J_L_CTRL|BaseRig1:Wrist_J_L_GRP|BaseRig1:Wrist_J_L_CTRL" 
+		"rotateX" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_R_GRP|BaseRig1:Clavical_J_R_CTRL|BaseRig1:Shoulder_J_R2_GRP|BaseRig1:Shoulder_J_R2_CTRL|BaseRig1:Arm_R_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_R_GRP|BaseRig1:Shoulder_J_R_CTRL" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_R_GRP|BaseRig1:Clavical_J_R_CTRL|BaseRig1:Shoulder_J_R2_GRP|BaseRig1:Shoulder_J_R2_CTRL|BaseRig1:Arm_R_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_R_GRP|BaseRig1:Shoulder_J_R_CTRL" 
+		"rotateZ" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_R_GRP|BaseRig1:Clavical_J_R_CTRL|BaseRig1:Shoulder_J_R2_GRP|BaseRig1:Shoulder_J_R2_CTRL|BaseRig1:Arm_R_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_R_GRP|BaseRig1:Shoulder_J_R_CTRL" 
+		"rotateY" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_R_GRP|BaseRig1:Clavical_J_R_CTRL|BaseRig1:Shoulder_J_R2_GRP|BaseRig1:Shoulder_J_R2_CTRL|BaseRig1:Arm_R_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_R_GRP|BaseRig1:Shoulder_J_R_CTRL" 
+		"rotateX" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_R_GRP|BaseRig1:Clavical_J_R_CTRL|BaseRig1:Shoulder_J_R2_GRP|BaseRig1:Shoulder_J_R2_CTRL|BaseRig1:Arm_R_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_R_GRP|BaseRig1:Shoulder_J_R_CTRL|BaseRig1:Elbow_J_R_GRP|BaseRig1:Elbow_J_R_CTRL" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_R_GRP|BaseRig1:Clavical_J_R_CTRL|BaseRig1:Shoulder_J_R2_GRP|BaseRig1:Shoulder_J_R2_CTRL|BaseRig1:Arm_R_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_R_GRP|BaseRig1:Shoulder_J_R_CTRL|BaseRig1:Elbow_J_R_GRP|BaseRig1:Elbow_J_R_CTRL" 
+		"rotateZ" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_R_GRP|BaseRig1:Clavical_J_R_CTRL|BaseRig1:Shoulder_J_R2_GRP|BaseRig1:Shoulder_J_R2_CTRL|BaseRig1:Arm_R_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_R_GRP|BaseRig1:Shoulder_J_R_CTRL|BaseRig1:Elbow_J_R_GRP|BaseRig1:Elbow_J_R_CTRL" 
+		"rotateY" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_R_GRP|BaseRig1:Clavical_J_R_CTRL|BaseRig1:Shoulder_J_R2_GRP|BaseRig1:Shoulder_J_R2_CTRL|BaseRig1:Arm_R_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_R_GRP|BaseRig1:Shoulder_J_R_CTRL|BaseRig1:Elbow_J_R_GRP|BaseRig1:Elbow_J_R_CTRL" 
 		"rotateX" " -av"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_R_GRP|BaseRig1:Clavical_J_R_CTRL|BaseRig1:Shoulder_J_R2_GRP|BaseRig1:Shoulder_J_R2_CTRL|BaseRig1:Arm_R_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_R_GRP|BaseRig1:Shoulder_J_R_CTRL|BaseRig1:Elbow_J_R_GRP|BaseRig1:Elbow_J_R_CTRL|BaseRig1:Wrist_J_R_GRP|BaseRig1:Wrist_J_R_CTRL" 
 		"rotate" " -type \"double3\" 0 0 0"
@@ -9254,8 +9286,8 @@ createNode skinCluster -n "skinCluster1";
 		1 7 1
 		1 7 0.99999999999999989
 		3 0 0.444278578128875 7 0.4255431068499112 8 0.13017831502121385
-		3 0 0.56670747065466132 7 0.40269903680045865 8 0.030593492544880047
-		3 0 0.69449766073439623 7 0.28453130311709429 8 0.020971036148509519
+		3 0 0.56670747519197173 7 0.40269903680738517 8 0.030593488000643026
+		3 0 0.69449768671370349 7 0.28453128267788719 8 0.020971030608409321
 		1 0 1
 		1 0 1
 		1 0 1
@@ -9274,9 +9306,9 @@ createNode skinCluster -n "skinCluster1";
 		1 7 0.99999999999999989
 		3 0 0.34320074987844146 7 0.42708837174646802 8 0.22971087837509052
 		3 0 0.45696216391312738 7 0.42866733945367963 8 0.11437049663319297
-		3 0 0.59874561225679668 7 0.37593103680962553 8 0.025323350933577779
-		3 0 0.71337070793082891 7 0.26899277702670238 8 0.01763651504246876
-		3 0 0.83608347409961647 7 0.1559789041277056 8 0.0079376217726779569
+		3 0 0.59874561682152672 7 0.37593103256867966 8 0.025323350609793596
+		3 0 0.71337071258894347 7 0.26899277245361519 8 0.017636514957441295
+		3 0 0.83608348959596612 7 0.15597889000366644 8 0.007937620400367355
 		2 0 0.9561306121641735 7 0.043869387835826501
 		1 0 1
 		1 0 1
@@ -9296,9 +9328,9 @@ createNode skinCluster -n "skinCluster1";
 		2 0 0.41548708628825259 7 0.58451291371174741
 		1 0 1
 		1 0 1
-		3 0 0.84133504094266431 7 0.15180627749569026 8 0.0068586815616453987
-		3 0 0.94736415751554937 7 0.051878606141049291 8 0.00075723634340123941
-		2 0 0.97675636965557211 7 0.023243630344427859
+		3 0 0.84133505225889338 7 0.15180626636374375 8 0.0068586813773629475
+		3 0 0.94736419176651787 7 0.051878573394449623 8 0.00075723483903254285
+		2 0 0.97675636969970592 7 0.023243630300294072
 		1 0 1
 		1 0 1
 		1 0 1
@@ -9331,7 +9363,7 @@ createNode skinCluster -n "skinCluster1";
 		1 0 1
 		1 7 1
 		1 7 1
-		2 0 0.12681475819736132 7 0.87318524180263868
+		2 0 0.12729426686264395 7 0.872705733137356
 		2 0 0.42803734406379962 7 0.57196265593620033
 		2 0 0.9801379312345706 7 0.019862068765429439
 		1 0 1
@@ -9392,7 +9424,7 @@ createNode skinCluster -n "skinCluster1";
 		1 10 1
 		1 10 1
 		1 10 1;
-	setAttr ".wl[454:804].w"
+	setAttr ".wl[454:778].w"
 		1 10 1
 		1 10 1
 		1 10 1
@@ -9523,31 +9555,31 @@ createNode skinCluster -n "skinCluster1";
 		1 10 1
 		1 10 1
 		2 9 0.059935394674539566 10 0.94006460532546043
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 8 0.0078431367874145508 9 0.99215686321258545
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
+		3 16 0.029002701863646507 17 0.48549829813635348 18 0.485499
+		3 16 0.013878664001822472 17 0.45475540496408939 18 0.53136593103408813
+		3 16 0.058412700891494751 17 0.47079329910850537 18 0.470794
+		3 16 0.057937886565923691 17 0.49879217147827148 18 0.44326994195580482
+		1 18 1
+		1 18 1
+		1 18 1
+		1 18 1
+		1 18 1
+		1 18 1
+		1 18 1
+		1 18 1
+		2 17 0.5 18 0.5
+		3 16 0.032565843313932419 17 0.48371715668606768 18 0.483717
+		1 18 1
+		2 17 0.02669331431388855 18 0.97330668568611145
+		1 18 1
+		2 8 0.0078431367874145508 18 0.99215686321258545
+		2 17 0.5 18 0.5
+		3 16 0.030408808739726512 17 0.48479519373541935 18 0.48479599752485408
+		1 18 1
+		2 17 0.019619587808847427 18 0.98038041219115257
+		1 18 1
+		2 17 4.6394887931455742e-08 18 0.99999995360511207
+		1 18 1
 		1 0 1
 		1 0 1
 		1 0 1
@@ -9580,37 +9612,41 @@ createNode skinCluster -n "skinCluster1";
 		2 8 0.11611555516719818 9 0.88388444483280182
 		2 8 0.060860760509967804 9 0.9391392394900322
 		2 8 0.8704039603471756 9 0.1295960396528244
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		3 7 0.0088087944313883781 8 0.85736916679888964 9 0.13382203876972198
-		3 8 0.47330665588378906 9 0.49279283359646797 10 0.033900510519742966
+		2 9 0.49999999999999994 16 0.5
+		2 9 0.5 16 0.5
+		1 16 1
+		1 16 1
+		1 16 1
+		1 16 1
+		2 9 0.5 16 0.5
+		1 16 1
+		4 7 0.0088087944313883781 8 0.85736916679888964 9 0.072560880333185196 
+		16 0.061261158436536789
+		4 8 0.47330665588378906 9 0.39732032641768456 10 0.033900510519742966 
+		16 0.095472507178783417
 		3 8 0.47437441349029541 9 0.45477879047393799 10 0.070846796035766602
-		1 9 1
-		2 8 0.76629513502120972 9 0.23370486497879028
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 9 0.98760666791349649 10 0.012393332086503506
-		1 9 1
-		2 9 0.97911126352846622 10 0.020888736471533775
-		3 8 0.033500111818996176 9 0.92252958356640169 10 0.043970304614602086
-		2 9 0.86615215241909027 10 0.13384784758090973
-		2 9 0.88848327845335007 10 0.11151672154664993
+		3 8 6.0094382803299595e-08 9 3.0783011695234563e-08 16 0.9999999091226055
+		4 7 1.4022714560316385e-09 8 0.76629513918526349 9 0.15204624516420331 
+		16 0.08165861424826179
+		2 16 0.91985683143138885 17 0.080143168568611145
+		2 16 0.89766896516084671 17 0.10233103483915329
+		3 16 0.92015501856709614 17 0.079844981432045672 18 8.5826746821496045e-13
+		2 16 0.95955777913331985 17 0.040442220866680145
+		2 16 0.89792467780529928 17 0.10207532219470082
+		1 16 1
+		1 16 1
+		2 16 0.91154523193836212 17 0.088454768061637878
+		1 16 1
+		1 16 1
+		2 16 0.96623295918107033 17 0.033767040818929672
+		1 16 1
+		3 9 0.49380366791349645 10 0.012393332086503506 16 0.493803
+		1 16 1
+		3 9 0.48955526352846618 10 0.020888736471533775 16 0.489556
+		4 8 0.033500111818996176 9 0.92252957862240459 10 0.043970304614602086 
+		16 4.9439971815564137e-09
+		3 9 0.83331937715411186 10 0.13384784758090973 16 0.032832775264978409
+		3 9 0.80601993203163147 10 0.11151672154664993 16 0.082463346421718597
 		3 8 0.032298911362886429 9 0.87757860496640205 10 0.090122483670711517
 		3 8 0.063073918223381042 9 0.84050588309764862 10 0.096420198678970337
 		2 9 0.17121082544326782 10 0.82878917455673218
@@ -9627,7 +9663,7 @@ createNode skinCluster -n "skinCluster1";
 		2 9 0.55350786447525024 10 0.44649213552474976
 		2 9 0.57367053843318416 10 0.42632946156681584
 		2 9 0.59173545241355896 10 0.40826454758644104
-		2 9 0.5 10 0.5
+		3 9 0.4549485556781292 10 0.5 16 0.045051444321870804
 		2 9 0.5 10 0.5
 		2 9 0.5 10 0.5
 		2 9 0.5 10 0.5
@@ -9635,10 +9671,10 @@ createNode skinCluster -n "skinCluster1";
 		3 8 0.066733285784721375 9 0.8427470326423645 10 0.090519681572914124
 		3 8 0.029229181205550292 9 0.89601468647990457 10 0.074756132314545143
 		3 8 0.031898509711027145 9 0.86313750967383385 10 0.10496398061513901
-		2 9 0.5 10 0.5
+		3 9 0.46956962160766125 10 0.5 16 0.030430378392338753
 		2 9 0.097501873970031738 10 0.90249812602996826
-		2 9 0.5 10 0.5
-		2 9 0.13430434465408325 10 0.86569565534591675
+		3 9 0.44701376929879189 10 0.5 16 0.052986230701208115
+		3 9 0.10173850134015083 10 0.86569565534591675 16 0.032565843313932419
 		3 8 0.47290629148483276 9 0.49305973201990128 10 0.034033976495265961
 		4 0 1.6666182406236199e-07 7 0.1746545844464579 8 0.71683701430787183 
 		9 0.10850823458384617
@@ -9689,30 +9725,32 @@ createNode skinCluster -n "skinCluster1";
 		2 0 0.98345014452934265 7 0.016549855470657349
 		3 0 0.91151151875469338 7 0.088488463632431458 8 1.7612875158334873e-08
 		1 0 1
-		2 8 0.81501533091068268 9 0.18498466908931732
-		2 8 0.0012302994728088379 9 0.99876970052719116
-		1 9 1
-		3 8 0.029896512627601624 9 0.93994004093110561 10 0.030163446441292763
-		1 9 1
+		3 8 0.81501533091068268 9 0.15268575772643089 16 0.032298911362886429
+		2 8 0.0012302994728088379 16 0.99876970052719116
+		2 16 0.93810386583209038 17 0.061896134167909622
+		4 8 0.029896512627601624 9 0.89402753673493862 10 0.030163446441292763 
+		16 0.045912504196166992
+		2 9 0.96302975714206696 16 0.036970242857933044
 		2 8 0.500258 9 0.499742
-		2 8 0.50006400000000006 9 0.499936
-		2 8 0.50410822033882141 9 0.49589177966117859
-		2 8 0.502338 9 0.497662
+		3 8 0.50006400000000006 9 0.22080026566982269 16 0.27913573433017724
+		3 8 0.50410821340894807 9 0.25822661360900168 16 0.23766517298205028
+		3 8 0.502338 9 0.24883100000000002 16 0.248831
 		3 7 0.12892872095108032 8 0.72292338311672211 9 0.14814789593219757
-		3 7 0.061528090387582779 8 0.73979085311293602 9 0.1986810564994812
+		5 0 1.6653785905873519e-08 7 0.061528091851344557 8 0.73979084683770213 
+		9 0.16825066807862055 16 0.030430376578546858
 		3 7 0.053667545318603516 8 0.79271245002746582 9 0.15362000465393066
 		2 8 0.91217899322509766 9 0.087821006774902344
 		3 7 0.084484346210956573 8 0.76523228734731674 9 0.15028336644172668
 		2 8 0.88481834530830383 9 0.11518165469169617
-		2 8 0.5 9 0.5
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 8 0.5 9 0.5
-		2 8 0.46596609406923228 9 0.53403390593076772
+		3 8 0.5 9 0.38007035106420517 16 0.11992964893579483
+		1 16 1
+		1 16 1
+		1 16 1
+		1 16 1
+		1 16 1
+		2 9 0.5 16 0.5
+		3 8 0.5 9 0.43930093944072723 16 0.060699060559272766
+		3 8 0.46596609406923228 9 0.49999993349266791 16 0.034033972438099802
 		3 8 0.40670680999755859 9 0.56406400911509991 10 0.029229180887341499
 		3 7 0.02896224707365036 8 0.45335329324007034 9 0.5176844596862793
 		3 8 0.027494115754961967 9 0.90609429217875004 10 0.066411592066287994
@@ -9720,17 +9758,19 @@ createNode skinCluster -n "skinCluster1";
 		2 9 0.074206948280334473 10 0.92579305171966553
 		3 7 0.086486339569091797 8 0.80965143442153931 9 0.1038622260093689
 		3 7 0.22880382835865021 8 0.71865299716591835 9 0.052543174475431442
-		3 7 0.22782744467258453 8 0.70450500398874283 9 0.067667551338672638
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
+		1 7 0.22782744467258453;
+	setAttr ".wl[778:1185].w"
+		2 8 0.70450500398874283 9 0.067667551338672638
+		1 16 1
+		1 16 1
+		1 16 1
+		1 16 1
+		1 16 1
+		2 16 1.0000000013025936 17 -1.3025936991492014e-09
+		1 16 1
+		1 16 1
 		2 9 0.17437508672493607 10 0.82562491327506393
-		2 9 0.55431908369064331 10 0.44568091630935669
+		3 9 0.53336483053863049 10 0.44568091630935669 16 0.020954253152012825
 		3 0 0.18391695618629456 7 0.44874927401542664 8 0.36733376979827881
 		3 0 0.27921208739280701 7 0.360394 8 0.360393912607193
 		3 0 0.2926921546459198 7 0.353654 8 0.35365384535408018
@@ -9744,26 +9784,26 @@ createNode skinCluster -n "skinCluster1";
 		3 0 0.70984363555908203 7 0.24344306811690331 8 0.046713296324014664
 		3 0 0.89135820418596268 7 0.016149461269378662 8 0.092492334544658661
 		3 0 0.67073804140090942 7 0.32397356396540999 8 0.005288394633680582
-		1 9 1
-		1 9 1
-		1 9 1;
-	setAttr ".wl[805:1236].w"
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
+		3 16 0.5196278989315033 17 0.40442961454391479 18 0.075942486524581909
+		3 16 0.5 17 0.36533223092556 18 0.13466776907444
+		3 16 0.52579012674600556 17 0.35836088202195693 18 0.11584899123203746
+		3 16 0.5 17 0.42993004620075226 18 0.070069953799247742
+		3 16 0.45467284321784973 17 0.46858387440443039 18 0.076743282377719879
+		3 16 0.49999999999999994 17 0.32168865203857427 18 0.17831134796142578
+		3 16 0.54046767950057983 17 0.39626916497945786 18 0.063263155519962311
+		3 16 0.5 17 0.41711726039648056 18 0.08288273960351944
 		2 9 0.84416858851909637 10 0.15583141148090363
 		2 9 0.8718826025724411 10 0.1281173974275589
-		2 9 0.90148000811416684 10 0.098519991885833103
-		2 9 0.90085916221141815 10 0.099140837788581848
-		2 9 0.89356115460395813 10 0.10643884539604187
+		3 9 0.90148000502753833 10 0.098519991885833103 16 3.0866285083419598e-09
+		3 9 0.87496664561331272 10 0.099140837788581848 16 0.025892516598105431
+		3 9 0.82669439911842346 10 0.10643884539604187 16 0.066866755485534668
 		4 0 0.15775749087333679 7 0.20193493366241455 8 0.62562625203281641 
 		9 0.014681323431432247
 		3 0 0.20887519419193268 7 0.099299140274524689 8 0.69182566553354263
 		3 0 0.2492232471704483 7 0.0584583580493927 8 0.692318394780159
 		3 0 0.27228796482086182 7 0.058992225676774979 8 0.6687198095023632
-		3 0 0.2794041633605957 7 0.086085937917232513 8 0.63450989872217178
+		5 0 0.27940416150256864 7 0.086085940390449506 8 0.63450989597613894 
+		9 1.8044788839044512e-09 16 3.2636406495330804e-10
 		3 0 0.28895515203475952 7 0.10904219001531601 8 0.60200265794992447
 		3 0 0.2773435115814209 7 0.092091932892799377 8 0.63056455552577972
 		1 10 1
@@ -10081,31 +10121,31 @@ createNode skinCluster -n "skinCluster1";
 		1 10 1
 		1 10 1
 		1 10 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		2 8 0.0078431367874145508 13 0.99215686321258545
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
+		3 13 0.029002701863646507 14 0.48549829813635348 15 0.485499
+		3 13 0.013878664001822472 14 0.45475540496408939 15 0.53136593103408813
+		3 13 0.058412700891494751 14 0.47079329910850537 15 0.470794
+		3 13 0.057937886565923691 14 0.49879217147827148 15 0.44326994195580482
+		1 15 1
+		1 15 1
+		1 15 1
+		1 15 1
+		1 15 1
+		1 15 1
+		1 15 1
+		1 15 1
+		2 14 0.5 15 0.5
+		3 13 0.032565843313932419 14 0.48371715668606768 15 0.483717
+		1 15 1
+		2 14 0.02669331431388855 15 0.97330668568611145
+		1 15 1
+		2 8 0.0078431367874145508 15 0.99215686321258545
+		2 14 0.5 15 0.5
+		3 13 0.030408807098865509 14 0.48479519290113443 15 0.484796
+		1 15 1
+		2 14 0.019619587808847427 15 0.98038041219115257
+		1 15 1
+		1 15 1
+		1 15 1
 		1 0 1
 		1 0 1
 		1 0 1
@@ -10129,7 +10169,8 @@ createNode skinCluster -n "skinCluster1";
 		1 0 1
 		1 0 1
 		1 0 1
-		1 0 1
+		1 0 1;
+	setAttr ".wl[1186:1505].w"
 		1 0 1
 		2 8 0.76212960481643677 9 0.23787039518356323
 		2 8 0.11611555516719818 9 0.88388444483280182
@@ -10149,17 +10190,17 @@ createNode skinCluster -n "skinCluster1";
 		13 0.095472507178783417
 		1 13 1
 		3 8 0.76629513502120972 9 0.15204624831676483 13 0.081658616662025452
+		2 13 0.91985683143138885 14 0.080143168568611145
+		2 13 0.89766896516084671 14 0.10233103483915329
+		2 13 0.92015501856803894 14 0.07984498143196106
+		2 13 0.95955777913331985 14 0.040442220866680145
+		2 13 0.89792467653751373 14 0.10207532346248627
 		1 13 1
 		1 13 1
+		2 13 0.91154523193836212 14 0.088454768061637878
 		1 13 1
 		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
+		2 13 0.96623295918107033 14 0.033767040818929672
 		1 13 1
 		3 9 0.49380366791349645 10 0.012393332086503506 13 0.493803
 		1 13 1
@@ -10182,9 +10223,7 @@ createNode skinCluster -n "skinCluster1";
 		2 9 0.5 10 0.5
 		2 9 0.5 10 0.5
 		3 8 0.4697030782699585 9 0.47363946959376335 10 0.056657452136278152
-		2 8 0.066733285784721375 9 0.8427470326423645;
-	setAttr ".wl[1236:1624].w"
-		1 10 0.090519681572914124
+		3 8 0.066733285784721375 9 0.8427470326423645 10 0.090519681572914124
 		3 8 0.029229180887341499 9 0.89601469039916992 10 0.074756128713488579
 		3 9 0.46956962160766125 10 0.5 13 0.030430378392338753
 		2 9 0.097501873970031738 10 0.90249812602996826
@@ -10234,7 +10273,7 @@ createNode skinCluster -n "skinCluster1";
 		2 0 0.91151165962219238 7 0.088488340377807617
 		3 8 0.81501533091068268 9 0.15268575772643089 13 0.032298911362886429
 		2 8 0.0012302994728088379 13 0.99876970052719116
-		1 13 1
+		2 13 0.93810386583209038 14 0.061896134167909622
 		4 8 0.029896512627601624 9 0.89402753673493862 10 0.030163446441292763 
 		13 0.045912504196166992
 		2 9 0.96302975714206696 13 0.036970242857933044
@@ -10283,14 +10322,14 @@ createNode skinCluster -n "skinCluster1";
 		3 0 0.2666662335395813 7 0.30006718635559082 8 0.43326658010482788
 		3 0 0.70984363555908203 7 0.24344306811690331 8 0.046713296324014664
 		3 0 0.89135820418596268 7 0.016149461269378662 8 0.092492334544658661
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
+		3 13 0.5196278989315033 14 0.40442961454391479 15 0.075942486524581909
+		3 13 0.5 14 0.36533223092556 15 0.13466776907444
+		3 13 0.52579015493392944 14 0.35836085677146912 15 0.11584898829460144
+		3 13 0.5 14 0.42993004620075226 15 0.070069953799247742
+		3 13 0.45467284321784973 14 0.46858387440443039 15 0.076743282377719879
+		3 13 0.49999999999999994 14 0.32168865203857427 15 0.17831134796142578
+		3 13 0.54046767950057983 14 0.39626916497945786 15 0.063263155519962311
+		3 13 0.5 14 0.41711726039648056 15 0.08288273960351944
 		2 9 0.8718826025724411 10 0.1281173974275589
 		2 9 0.90148003399372101 10 0.098519966006278992
 		3 9 0.87496664561331272 10 0.099140837788581848 13 0.025892516598105431
@@ -10455,127 +10494,127 @@ createNode skinCluster -n "skinCluster1";
 		1 10 1
 		1 10 1
 		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
-		1 10 1
 		1 10 1;
-	setAttr ".wl[1625:1842].w"
+	setAttr ".wl[1506:1842].w"
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
 		1 10 1
 		1 10 1
 		1 10 1
@@ -10632,70 +10671,70 @@ createNode skinCluster -n "skinCluster1";
 		3 8 0.060193426907062531 9 0.86179696023464203 10 0.078009612858295441
 		3 8 0.47277283668518066 9 0.49586251750588417 10 0.031364645808935165
 		2 8 0.93059737980365753 9 0.069402620196342468
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
+		2 16 0.88591793924570084 17 0.11408206075429916
+		3 16 0.8712763637304306 17 0.10469965264201164 18 0.024023983627557755
+		2 16 0.89213445782661438 17 0.10786554217338562
+		2 16 0.88761512190103531 17 0.11238487809896469
+		2 16 0.91184108704328537 17 0.08815891295671463
+		3 16 0.91034036559514742 17 0.062699388945487808 18 0.026960245459364839
+		2 16 0.89923736453056335 17 0.10076263546943665
+		2 16 0.88775775581598282 17 0.11224224418401718
+		2 13 0.88591793924570084 14 0.11408206075429916
+		3 13 0.8712763637304306 14 0.10469965264201164 15 0.024023983627557755
+		2 13 0.89213445782661438 14 0.10786554217338562
+		2 13 0.88761512190103531 14 0.11238487809896469
+		2 13 0.91184108704328537 14 0.08815891295671463
+		3 13 0.91034039855003357 14 0.062699351459741592 15 0.026960249990224838
+		2 13 0.89923736453056335 14 0.10076263546943665
+		2 13 0.88775775581598282 14 0.11224224418401718
+		2 16 0.99559560278430581 17 0.0044043972156941891
+		1 16 1
+		1 16 1
+		1 16 1
+		2 16 0.98038041219115257 17 0.019619587808847427
+		2 16 0.94572246447205544 17 0.054277535527944565
+		2 16 0.97562067583203316 17 0.024379324167966843
+		1 16 1
+		2 13 0.99559560278430581 14 0.0044043972156941891
 		1 13 1
 		1 13 1
 		1 13 1
+		2 13 0.98038041219115257 14 0.019619587808847427
+		2 13 0.94572246447205544 14 0.054277535527944565
+		2 13 0.97562067583203316 14 0.024379324167966843
 		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
+		2 17 0.16870173811912537 18 0.83129826188087463
+		2 17 0.098231397569179535 18 0.90176860243082047
+		3 16 0.017751054838299751 17 0.13533510267734528 18 0.84691384248435497
+		2 17 0.090223409235477448 18 0.90977659076452255
+		2 17 0.098364867269992828 18 0.90163513273000717
+		3 8 9.3497476427728543e-10 17 0.097297120416506289 18 0.90270287864851895
+		2 17 0.15068376064300537 18 0.84931623935699463
+		2 17 0.12599244713783264 18 0.87400755286216736
+		2 14 0.16870173811912537 15 0.83129826188087463
+		2 14 0.098231397569179535 15 0.90176860243082047
+		3 13 0.017751054838299751 14 0.13533510267734528 15 0.84691384248435497
+		2 14 0.090223409235477448 15 0.90977659076452255
+		2 14 0.098364867269992828 15 0.90163513273000717
+		2 14 0.097297132015228271 15 0.90270286798477173
+		2 14 0.15068376064300537 15 0.84931623935699463
+		2 14 0.12599244713783264 15 0.87400755286216736
+		3 16 0.11024541407823563 17 0.77764265984296799 18 0.11211192607879639
+		3 16 0.084964819252490997 17 0.71069785207509995 18 0.20433732867240906
+		3 16 0.13494575996875113 17 0.77102218629888863 18 0.094032053732360232
+		3 16 0.091585710644721985 17 0.71368654072284698 18 0.19472774863243103
+		3 16 0.11379680782556534 17 0.81960336863994598 18 0.066599823534488678
+		3 16 0.060590788722038269 17 0.80407410860061646 18 0.13533510267734528
+		3 16 0.10362488776445389 17 0.73608175665140152 18 0.16029335558414459
+		3 16 0.054619811475276947 17 0.78041549772024155 18 0.16496469080448151
+		3 13 0.11024541407823563 14 0.77764265984296799 15 0.11211192607879639
+		3 13 0.084964819252490997 14 0.71069785207509995 15 0.20433732867240906
+		3 13 0.13494576513767242 14 0.77102219313383102 15 0.094032041728496552
+		3 13 0.091585710644721985 14 0.71368654072284698 15 0.19472774863243103
+		3 13 0.11379680782556534 14 0.81960336863994598 15 0.066599823534488678
+		3 13 0.060590788722038269 14 0.80407410860061646 15 0.13533510267734528
+		3 13 0.10362488776445389 14 0.73608175665140152 15 0.16029335558414459
+		3 13 0.054619811475276947 14 0.78041549772024155 15 0.16496469080448151
 		1 0 1
 		1 0 1
 		1 0 1
@@ -10762,22 +10801,22 @@ createNode skinCluster -n "skinCluster1";
 		3 0 0.5305638313293457 7 0.36586610227823257 8 0.10357006639242172
 		3 0 0.53363358974456787 7 0.30427417159080505 8 0.16209223866462708
 		3 0 0.52749410271644592 7 0.29778411984443665 8 0.17472177743911743
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
-		1 13 1
+		1 18 1
+		1 18 1
+		1 18 1
+		1 18 1
+		1 18 1
+		1 18 1
+		1 18 1
+		1 18 1
+		1 15 1
+		1 15 1
+		1 15 1
+		1 15 1
+		1 15 1
+		1 15 1
+		1 15 1
+		1 15 1
 		1 0 1
 		1 0 1
 		1 0 1
