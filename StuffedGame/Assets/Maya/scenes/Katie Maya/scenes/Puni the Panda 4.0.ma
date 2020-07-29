@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Puni the Panda 4.0.ma
-//Last modified: Tue, Jul 28, 2020 07:07:00 PM
+//Last modified: Tue, Jul 28, 2020 09:01:22 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "BaseRig1" -rfn "BaseRigRN1" -op "v=0;p=17;f=0" -typ "mayaAscii"
 		 "/Users/Katie/StuffedAgain/Stuffed/StuffedGame/Assets/Maya/scenes/BaseRig.ma";
@@ -15,18 +15,18 @@ fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Mac OS X 10.15.6";
 fileInfo "license" "student";
-fileInfo "UUID" "C83C3629-404F-E910-D948-5197ED363271";
+fileInfo "UUID" "28D4E3DC-2348-4FC1-94D7-A9AE2C9DF4AB";
 createNode transform -s -n "persp";
 	rename -uid "425F33C5-074E-0DDA-57FF-A083BEB032D3";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.0253839206654107 4.7393871523586535 6.5497155486405312 ;
-	setAttr ".r" -type "double3" 359.66164672468267 11880.599999998842 1.9413629656107115e-18 ;
+	setAttr ".t" -type "double3" 1.3773589085877178 3.901496398070087 4.5860119043880321 ;
+	setAttr ".r" -type "double3" 353.0616469183451 12610.999999914076 1.0125262975876128e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "77E8AA9E-234E-68FC-26D2-21B85028178A";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 6.8139250298561569;
+	setAttr ".coi" 4.8193629422707565;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -52,13 +52,13 @@ createNode camera -s -n "topShape" -p "top";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -s -n "front";
 	rename -uid "3F8EC8A1-D942-A6DC-BA45-FFA7E6A52CC1";
-	setAttr ".t" -type "double3" 0.25264947669473137 2.6326944289913086 1000.1209292633065 ;
+	setAttr ".t" -type "double3" 0.10921438550698781 5.3151229699892966 1000.1209292633065 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "5094073D-7A4A-D791-4AEE-3AA14C3CF72E";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".coi" 999.3567048234471;
-	setAttr ".ow" 4.3090624038478076;
+	setAttr ".ow" 16.309062403847808;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
 	setAttr ".man" -type "string" "front_mask";
@@ -2681,7 +2681,7 @@ createNode mesh -n "Puni_the_Panda_2_6:L_earShape" -p "Puni_the_Panda_2_6:L_ear1
 	setAttr -s 10 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.69036495685577393 0.39826251938939095 ;
+	setAttr ".pv" -type "double2" 0.29450219869613647 0.36175072193145752 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -8477,7 +8477,7 @@ createNode reference -n "BaseRigRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BaseRigRN1"
 		"BaseRigRN1" 0
-		"BaseRigRN1" 207
+		"BaseRigRN1" 229
 		2 "|BaseRig1:Root_J|BaseRig1:Pelvis_J" "useObjectColor" " 1"
 		2 "|BaseRig1:Root_J|BaseRig1:Pelvis_J" "objectColor" " 0"
 		2 "|BaseRig1:Root_J|BaseRig1:Pelvis_J" "translate" " -type \"double3\" 0 0 0"
@@ -8578,9 +8578,23 @@ createNode reference -n "BaseRigRN1";
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j" "translateZ" 
 		" -av"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j" "lockInfluenceWeights" 
-		" 0"
+		" 1"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j" 
+		"translate" " -type \"double3\" 0.58923177826553319 0 0"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j" 
+		"translateX" " -av"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j" 
+		"translateY" " -av"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j" 
 		"lockInfluenceWeights" " 0"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J" 
+		"translate" " -type \"double3\" 0.58923177826553408 0 0"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J" 
+		"translateX" " -av"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J" 
+		"translateY" " -av"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J" 
+		"translateZ" " -av"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J" 
 		"lockInfluenceWeights" " 1"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:EyeLid_J_L" 
@@ -8588,7 +8602,23 @@ createNode reference -n "BaseRigRN1";
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:EyeLid_J_R" 
 		"lockInfluenceWeights" " 1"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK" 
-		"lockInfluenceWeights" " 1"
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK" 
+		"translateX" " -av"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK" 
+		"translateY" " -av"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK" 
+		"translateZ" " -av"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK" 
+		"rotate" " -type \"double3\" 0 0 5.02479226267205092"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK" 
+		"rotateX" " -av"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK" 
+		"rotateY" " -av"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK" 
+		"rotateZ" " -av"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK" 
+		"lockInfluenceWeights" " 0"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK|BaseRig1:Elbow_J_L_RK" 
 		"lockInfluenceWeights" " 1"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK|BaseRig1:Elbow_J_L_RK|BaseRig1:Wrist_J_L_RK" 
@@ -8597,6 +8627,8 @@ createNode reference -n "BaseRigRN1";
 		"lockInfluenceWeights" " 1"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_R|BaseRig1:Shoulder_J_R2_RK|BaseRig1:Shoulder_J_R_RK|BaseRig1:Elbow_J_R_RK" 
 		"lockInfluenceWeights" " 1"
+		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_R|BaseRig1:Shoulder_J_R2_RK|BaseRig1:Shoulder_J_R_RK|BaseRig1:Elbow_J_R_RK|BaseRig1:Wrist_J_R_RK" 
+		"preferredAngle" " -type \"double3\" 0 0 0"
 		2 "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_R|BaseRig1:Shoulder_J_R2_RK|BaseRig1:Shoulder_J_R_RK|BaseRig1:Elbow_J_R_RK|BaseRig1:Wrist_J_R_RK" 
 		"lockInfluenceWeights" " 1"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl" "translate" " -type \"double3\" 0 0 0"
@@ -8644,6 +8676,18 @@ createNode reference -n "BaseRigRN1";
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL" 
 		"rotateY" " -av"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL" 
+		"rotateX" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL" 
+		"rotatePivot" " -type \"double3\" 2.58923177826553363 0 0"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL" 
+		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL" 
+		"rotateZ" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL" 
+		"rotateY" " -av"
+		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL" 
 		"rotateX" " -av"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:head_J_GRP|BaseRig1:head_J_CTRL" 
 		"rotate" " -type \"double3\" 0 0 0"
@@ -8796,47 +8840,47 @@ createNode reference -n "BaseRigRN1";
 		"BaseRigRN1.placeHolderList[37]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j.message" 
 		"BaseRigRN1.placeHolderList[38]" ""
-		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j.message" 
-		"BaseRigRN1.placeHolderList[39]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j.lockInfluenceWeights" 
-		"BaseRigRN1.placeHolderList[40]" ""
+		"BaseRigRN1.placeHolderList[39]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j.worldMatrix" 
-		"BaseRigRN1.placeHolderList[41]" ""
+		"BaseRigRN1.placeHolderList[40]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j.objectColorRGB" 
-		"BaseRigRN1.placeHolderList[42]" ""
+		"BaseRigRN1.placeHolderList[41]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J.message" 
-		"BaseRigRN1.placeHolderList[43]" ""
+		"BaseRigRN1.placeHolderList[42]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J.lockInfluenceWeights" 
-		"BaseRigRN1.placeHolderList[44]" ""
+		"BaseRigRN1.placeHolderList[43]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J.worldMatrix" 
-		"BaseRigRN1.placeHolderList[45]" ""
+		"BaseRigRN1.placeHolderList[44]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J.objectColorRGB" 
-		"BaseRigRN1.placeHolderList[46]" ""
+		"BaseRigRN1.placeHolderList[45]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:EyeLid_J_L.message" 
-		"BaseRigRN1.placeHolderList[47]" ""
+		"BaseRigRN1.placeHolderList[46]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:EyeLid_J_L.lockInfluenceWeights" 
-		"BaseRigRN1.placeHolderList[48]" ""
+		"BaseRigRN1.placeHolderList[47]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:EyeLid_J_L.worldMatrix" 
-		"BaseRigRN1.placeHolderList[49]" ""
+		"BaseRigRN1.placeHolderList[48]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:EyeLid_J_L.objectColorRGB" 
-		"BaseRigRN1.placeHolderList[50]" ""
+		"BaseRigRN1.placeHolderList[49]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:Eye_J_L.message" 
-		"BaseRigRN1.placeHolderList[51]" ""
+		"BaseRigRN1.placeHolderList[50]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:EyeLid_J_R.message" 
-		"BaseRigRN1.placeHolderList[52]" ""
+		"BaseRigRN1.placeHolderList[51]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:EyeLid_J_R.lockInfluenceWeights" 
-		"BaseRigRN1.placeHolderList[53]" ""
+		"BaseRigRN1.placeHolderList[52]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:EyeLid_J_R.worldMatrix" 
-		"BaseRigRN1.placeHolderList[54]" ""
+		"BaseRigRN1.placeHolderList[53]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:EyeLid_J_R.objectColorRGB" 
-		"BaseRigRN1.placeHolderList[55]" ""
+		"BaseRigRN1.placeHolderList[54]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:Eye_J_R.message" 
-		"BaseRigRN1.placeHolderList[56]" ""
+		"BaseRigRN1.placeHolderList[55]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L.message" 
-		"BaseRigRN1.placeHolderList[57]" ""
+		"BaseRigRN1.placeHolderList[56]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK.message" 
-		"BaseRigRN1.placeHolderList[58]" ""
+		"BaseRigRN1.placeHolderList[57]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK.lockInfluenceWeights" 
+		"BaseRigRN1.placeHolderList[58]" ""
+		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK.message" 
 		"BaseRigRN1.placeHolderList[59]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L|BaseRig1:Shoulder_J_L2_RK|BaseRig1:Shoulder_J_L_RK.message" 
 		"BaseRigRN1.placeHolderList[60]" ""
@@ -8894,74 +8938,74 @@ createNode skinCluster -n "skinCluster1";
 	rename -uid "6F926F9E-4A47-B697-F4ED-7BADC220890E";
 	setAttr -s 1843 ".wl";
 	setAttr ".wl[0:453].w"
-		1 9 1
-		1 9 1
-		2 7 3.5464763641357422e-05 9 0.99996453523635864
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 0.000682830810546875 9 0.99931716918945312
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 5.9604644775390625e-08 9 0.99999994039535522
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 0.00010009435769175471 9 0.99989990564230824
-		1 9 1
-		2 7 3.000058241837952e-05 9 0.99996999941758158
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 0.00064798961988543624 9 0.99935201038011456
-		1 9 1
-		1 9 1
-		2 7 4.2017178790758828e-09 9 0.99999999579828214
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 3.2784915009842736e-06 9 0.99999672150849905
-		2 7 6.9373693878693879e-09 9 0.99999999306263065
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 3.4387846370829644e-05 9 0.99996561215362922
-		1 9 1
-		1 9 1
-		2 7 5.8281070636212462e-08 9 0.99999994171892936
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
+		1 10 1
+		1 10 1
+		2 7 3.5464763641357422e-05 10 0.99996453523635864
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 7 0.000682830810546875 10 0.99931716918945312
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 7 5.9604644775390625e-08 10 0.99999994039535522
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 7 0.00010009435769175471 10 0.99989990564230824
+		1 10 1
+		2 7 3.000058241837952e-05 10 0.99996999941758158
+		1 10 1
+		1 10 1
+		1 10 1
+		2 7 0.00064798961988543624 10 0.99935201038011456
+		1 10 0.99999999999999989
+		1 10 1
+		2 7 4.2017178790758828e-09 10 0.99999999579828214
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 7 3.2784915009842736e-06 10 0.99999672150849905
+		2 7 6.9373693878693879e-09 10 0.99999999306263054
+		1 10 1
+		1 10 1
+		1 10 1
+		2 7 3.4387846370829644e-05 10 0.99996561215362911
+		1 10 1
+		1 10 1
+		2 7 5.8281070636212462e-08 10 0.99999994171892936
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1.0000000000000002
 		1 0 1
 		1 0 1
 		1 0 1
@@ -9287,7 +9331,7 @@ createNode skinCluster -n "skinCluster1";
 		1 0 1
 		1 7 1
 		1 7 1
-		2 0 0.11833489195663831 7 0.88166510804336173
+		2 0 0.12681475819736132 7 0.87318524180263868
 		2 0 0.42803734406379962 7 0.57196265593620033
 		2 0 0.9801379312345706 7 0.019862068765429439
 		1 0 1
@@ -9344,11 +9388,144 @@ createNode skinCluster -n "skinCluster1";
 		1 0 1
 		1 0 1
 		1 0 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1;
+	setAttr ".wl[454:804].w"
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 9 0.048125863075256348 10 0.95187413692474365
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 9 0.037454959005117416 10 0.96254504099488258
+		1 10 1
+		1 10 1
+		2 9 0.059935394674539566 10 0.94006460532546043
 		1 9 1
 		1 9 1
 		1 9 1
-		1 9 1;
-	setAttr ".wl[454:881].w"
 		1 9 1
 		1 9 1
 		1 9 1
@@ -9363,140 +9540,7 @@ createNode skinCluster -n "skinCluster1";
 		1 9 1
 		1 9 1
 		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 8 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 8 5.9604644775390625e-08 9 0.99999994039535522
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
+		2 8 0.0078431367874145508 9 0.99215686321258545
 		1 9 1
 		1 9 1
 		1 9 1
@@ -9529,30 +9573,26 @@ createNode skinCluster -n "skinCluster1";
 		1 0 1
 		1 0 1
 		1 0 1
-		2 7 5.8842886200033424e-09 8 0.99999999411571139
-		2 7 0.1194525808095932 8 0.8805474191904068
-		1 9 1
-		1 9 1
-		1 9 1
-		1 8 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 0.0088087944313883781 8 0.99119120556861162
-		1 9 1
-		1 9 1
-		1 9 1
-		1 8 1
+		4 7 5.8842886200033424e-09 8 0.76212959408692871 9 0.23787039972643045 
+		10 3.0235216021276781e-10
+		3 7 0.1194525808095932 8 0.61895294487476349 9 0.26159447431564331
+		3 8 0.098898738622665405 9 0.86762528866529465 10 0.033475972712039948
+		2 8 0.11611555516719818 9 0.88388444483280182
+		2 8 0.060860760509967804 9 0.9391392394900322
+		2 8 0.8704039603471756 9 0.1295960396528244
 		1 9 1
 		1 9 1
 		1 9 1
 		1 9 1
 		1 9 1
+		1 9 1
+		1 9 1
+		1 9 1
+		3 7 0.0088087944313883781 8 0.85736916679888964 9 0.13382203876972198
+		3 8 0.47330665588378906 9 0.49279283359646797 10 0.033900510519742966
+		3 8 0.47437441349029541 9 0.45477879047393799 10 0.070846796035766602
+		1 9 1
+		2 8 0.76629513502120972 9 0.23370486497879028
 		1 9 1
 		1 9 1
 		1 9 1
@@ -9565,39 +9605,46 @@ createNode skinCluster -n "skinCluster1";
 		1 9 1
 		1 9 1
 		1 9 1
+		2 9 0.98760666791349649 10 0.012393332086503506
 		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		3 0 1.6666182406236199e-07 7 0.1746545844464579 8 0.82534524889171801
-		2 7 0.1576240211725235 8 0.8423759788274765
-		3 0 0.075408615171909332 7 0.18351654708385468 8 0.74107483774423599
+		2 9 0.97911126352846622 10 0.020888736471533775
+		3 8 0.033500111818996176 9 0.92252958356640169 10 0.043970304614602086
+		2 9 0.86615215241909027 10 0.13384784758090973
+		2 9 0.88848327845335007 10 0.11151672154664993
+		3 8 0.032298911362886429 9 0.87757860496640205 10 0.090122483670711517
+		3 8 0.063073918223381042 9 0.84050588309764862 10 0.096420198678970337
+		2 9 0.17121082544326782 10 0.82878917455673218
+		2 9 0.19150948524475098 10 0.80849051475524902
+		2 9 0.059613943099975586 10 0.94038605690002441
+		2 9 0.12685982882976532 10 0.87314017117023468
+		2 9 0.048436343669891357 10 0.95156365633010864
+		2 9 0.050920247698499566 10 0.94907975230150043
+		2 9 0.069142699241638184 10 0.93085730075836182
+		2 9 0.09652978926897049 10 0.90347021073102951
+		2 9 0.16276142835464458 10 0.83723857164535542
+		2 9 0.19462138414382935 10 0.80537861585617065
+		2 9 0.16797614097595215 10 0.83202385902404785
+		2 9 0.55350786447525024 10 0.44649213552474976
+		2 9 0.57367053843318416 10 0.42632946156681584
+		2 9 0.59173545241355896 10 0.40826454758644104
+		2 9 0.5 10 0.5
+		2 9 0.5 10 0.5
+		2 9 0.5 10 0.5
+		2 9 0.5 10 0.5
+		3 8 0.4697030782699585 9 0.47363946959376335 10 0.056657452136278152
+		3 8 0.066733285784721375 9 0.8427470326423645 10 0.090519681572914124
+		3 8 0.029229181205550292 9 0.89601468647990457 10 0.074756132314545143
+		3 8 0.031898509711027145 9 0.86313750967383385 10 0.10496398061513901
+		2 9 0.5 10 0.5
+		2 9 0.097501873970031738 10 0.90249812602996826
+		2 9 0.5 10 0.5
+		2 9 0.13430434465408325 10 0.86569565534591675
+		3 8 0.47290629148483276 9 0.49305973201990128 10 0.034033976495265961
+		4 0 1.6666182406236199e-07 7 0.1746545844464579 8 0.71683701430787183 
+		9 0.10850823458384617
+		3 7 0.1576240211725235 8 0.77243949472904205 9 0.069936484098434448
+		4 0 0.075408615171909332 7 0.18351654708385468 8 0.63540835678577423 
+		9 0.10566648095846176
 		1 0 1
 		1 0 1
 		1 0 1
@@ -9642,41 +9689,38 @@ createNode skinCluster -n "skinCluster1";
 		2 0 0.98345014452934265 7 0.016549855470657349
 		3 0 0.91151151875469338 7 0.088488463632431458 8 1.7612875158334873e-08
 		1 0 1
-		1 8 1
-		1 8 1
+		2 8 0.81501533091068268 9 0.18498466908931732
+		2 8 0.0012302994728088379 9 0.99876970052719116
 		1 9 1
+		3 8 0.029896512627601624 9 0.93994004093110561 10 0.030163446441292763
 		1 9 1
-		1 9 1
-		1 8 1
-		1 8 1
-		1 8 1
-		1 8 1
-		2 7 0.12892872095108032 8 0.87107127904891968
-		2 7 0.061528090387582779 8 0.93847190961241722
-		2 7 0.053667545318603516 8 0.94633245468139648
-		1 8 1
-		2 7 0.084484346210956573 8 0.91551565378904343
-		1 8 1
-		1 9 1
-		1 9 1
-		1 9 1
+		2 8 0.500258 9 0.499742
+		2 8 0.50006400000000006 9 0.499936
+		2 8 0.50410822033882141 9 0.49589177966117859
+		2 8 0.502338 9 0.497662
+		3 7 0.12892872095108032 8 0.72292338311672211 9 0.14814789593219757
+		3 7 0.061528090387582779 8 0.73979085311293602 9 0.1986810564994812
+		3 7 0.053667545318603516 8 0.79271245002746582 9 0.15362000465393066
+		2 8 0.91217899322509766 9 0.087821006774902344
+		3 7 0.084484346210956573 8 0.76523228734731674 9 0.15028336644172668
+		2 8 0.88481834530830383 9 0.11518165469169617
+		2 8 0.5 9 0.5
 		1 9 1
 		1 9 1
 		1 9 1
 		1 9 1
 		1 9 1
 		1 9 1
-		1 9 1
-		2 7 0.02896224707365036 9 0.97103775292634964
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 0.086486339569091797 8 0.9135136604309082
-		2 7 0.22880382835865021 8 0.77119617164134979
-		2 7 0.22782744467258453 8 0.77217255532741547
-		1 9 1
-		1 9 1
-		1 9 1
+		2 8 0.5 9 0.5
+		2 8 0.46596609406923228 9 0.53403390593076772
+		3 8 0.40670680999755859 9 0.56406400911509991 10 0.029229180887341499
+		3 7 0.02896224707365036 8 0.45335329324007034 9 0.5176844596862793
+		3 8 0.027494115754961967 9 0.90609429217875004 10 0.066411592066287994
+		2 9 0.49999999999999994 10 0.5
+		2 9 0.074206948280334473 10 0.92579305171966553
+		3 7 0.086486339569091797 8 0.80965143442153931 9 0.1038622260093689
+		3 7 0.22880382835865021 8 0.71865299716591835 9 0.052543174475431442
+		3 7 0.22782744467258453 8 0.70450500398874283 9 0.067667551338672638
 		1 9 1
 		1 9 1
 		1 9 1
@@ -9684,6 +9728,9 @@ createNode skinCluster -n "skinCluster1";
 		1 9 1
 		1 9 1
 		1 9 1
+		1 9 1
+		2 9 0.17437508672493607 10 0.82562491327506393
+		2 9 0.55431908369064331 10 0.44568091630935669
 		3 0 0.18391695618629456 7 0.44874927401542664 8 0.36733376979827881
 		3 0 0.27921208739280701 7 0.360394 8 0.360393912607193
 		3 0 0.2926921546459198 7 0.353654 8 0.35365384535408018
@@ -9699,365 +9746,366 @@ createNode skinCluster -n "skinCluster1";
 		3 0 0.67073804140090942 7 0.32397356396540999 8 0.005288394633680582
 		1 9 1
 		1 9 1
+		1 9 1;
+	setAttr ".wl[805:1236].w"
 		1 9 1
 		1 9 1
 		1 9 1
 		1 9 1
 		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		3 0 0.15775749087333679 7 0.20193493366241455 8 0.64030757546424866
+		2 9 0.84416858851909637 10 0.15583141148090363
+		2 9 0.8718826025724411 10 0.1281173974275589
+		2 9 0.90148000811416684 10 0.098519991885833103
+		2 9 0.90085916221141815 10 0.099140837788581848
+		2 9 0.89356115460395813 10 0.10643884539604187
+		4 0 0.15775749087333679 7 0.20193493366241455 8 0.62562625203281641 
+		9 0.014681323431432247
 		3 0 0.20887519419193268 7 0.099299140274524689 8 0.69182566553354263
 		3 0 0.2492232471704483 7 0.0584583580493927 8 0.692318394780159
 		3 0 0.27228796482086182 7 0.058992225676774979 8 0.6687198095023632
 		3 0 0.2794041633605957 7 0.086085937917232513 8 0.63450989872217178
 		3 0 0.28895515203475952 7 0.10904219001531601 8 0.60200265794992447
 		3 0 0.2773435115814209 7 0.092091932892799377 8 0.63056455552577972
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1;
-	setAttr ".wl[882:1339].w"
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 8 0.15434062480926514 9 0.84565937519073486
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 9 0.051541268825531006 10 0.94845873117446899
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 9 0.064388647675514221 10 0.93561135232448578
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 9 0.048125863075256348 10 0.95187413692474365
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		2 8 0.0078431367874145508 13 0.99215686321258545
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
 		1 0 1
 		1 0 1
 		1 0 1
@@ -10083,64 +10131,68 @@ createNode skinCluster -n "skinCluster1";
 		1 0 1
 		1 0 1
 		1 0 1
-		1 8 1
-		1 9 1
-		1 9 1
-		1 8 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 0.0088087944313883781 8 0.99119120556861162
-		1 9 1
-		1 9 1
-		1 8 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 0.17465464770793915 8 0.82534535229206085
-		2 7 0.1576240211725235 8 0.8423759788274765
+		2 8 0.76212960481643677 9 0.23787039518356323
+		2 8 0.11611555516719818 9 0.88388444483280182
+		2 8 0.060860760509967804 9 0.9391392394900322
+		2 8 0.8704039603471756 9 0.1295960396528244
+		2 9 0.49999999999999994 13 0.5
+		2 9 0.5 13 0.5
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		2 9 0.5 13 0.5
+		1 13 1
+		4 7 0.0088087944313883781 8 0.85736916679888964 9 0.072560880333185196 
+		13 0.061261158436536789
+		4 8 0.47330665588378906 9 0.39732032641768456 10 0.033900510519742966 
+		13 0.095472507178783417
+		1 13 1
+		3 8 0.76629513502120972 9 0.15204624831676483 13 0.081658616662025452
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		3 9 0.49380366791349645 10 0.012393332086503506 13 0.493803
+		1 13 1
+		3 9 0.48955526352846618 10 0.020888736471533775 13 0.489556
+		3 8 0.033500112593173981 9 0.92252958193421364 10 0.043970305472612381
+		3 9 0.83331937715411186 10 0.13384784758090973 13 0.032832775264978409
+		3 9 0.80601993203163147 10 0.11151672154664993 13 0.082463346421718597
+		3 8 0.032298911362886429 9 0.87757860496640205 10 0.090122483670711517
+		2 9 0.19150948524475098 10 0.80849051475524902
+		2 9 0.059613943099975586 10 0.94038605690002441
+		2 9 0.12685982882976532 10 0.87314017117023468
+		2 9 0.048436343669891357 10 0.95156365633010864
+		2 9 0.050920248031616211 10 0.94907975196838379
+		2 9 0.069142699241638184 10 0.93085730075836182
+		2 9 0.16276144981384277 10 0.83723855018615723
+		2 9 0.19462138414382935 10 0.80537861585617065
+		2 9 0.57367053627967834 10 0.42632946372032166
+		2 9 0.59173545241355896 10 0.40826454758644104
+		3 9 0.4549485556781292 10 0.5 13 0.045051444321870804
+		2 9 0.5 10 0.5
+		2 9 0.5 10 0.5
+		3 8 0.4697030782699585 9 0.47363946959376335 10 0.056657452136278152
+		2 8 0.066733285784721375 9 0.8427470326423645;
+	setAttr ".wl[1236:1624].w"
+		1 10 0.090519681572914124
+		3 8 0.029229180887341499 9 0.89601469039916992 10 0.074756128713488579
+		3 9 0.46956962160766125 10 0.5 13 0.030430378392338753
+		2 9 0.097501873970031738 10 0.90249812602996826
+		3 9 0.44701376929879189 10 0.5 13 0.052986230701208115
+		3 9 0.10173850134015083 10 0.86569565534591675 13 0.032565843313932419
+		3 8 0.47290629148483276 9 0.49305973201990128 10 0.034033976495265961
+		3 7 0.17465464770793915 8 0.71683703362941742 9 0.10850831866264343
+		3 7 0.1576240211725235 8 0.77243949472904205 9 0.069936484098434448
 		1 0 1
 		1 0 1
 		1 0 1
@@ -10180,45 +10232,47 @@ createNode skinCluster -n "skinCluster1";
 		3 0 0.93593604117631912 7 0.030163448303937912 8 0.033900510519742966
 		3 0 0.83770464360713959 7 0.048715308308601379 8 0.11358004808425903
 		2 0 0.91151165962219238 7 0.088488340377807617
-		1 8 1
-		1 8 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 8 1
-		1 8 1
-		1 8 1
-		1 8 1
-		2 7 0.12892872095108032 8 0.87107127904891968
-		2 7 0.061528090387582779 8 0.93847190961241722
-		2 7 0.053667545318603516 8 0.94633245468139648
-		1 8 1
-		1 8 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 0.086486339569091797 8 0.9135136604309082
-		2 7 0.22880382835865021 8 0.77119617164134979
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
+		3 8 0.81501533091068268 9 0.15268575772643089 13 0.032298911362886429
+		2 8 0.0012302994728088379 13 0.99876970052719116
+		1 13 1
+		4 8 0.029896512627601624 9 0.89402753673493862 10 0.030163446441292763 
+		13 0.045912504196166992
+		2 9 0.96302975714206696 13 0.036970242857933044
+		2 8 0.500258 9 0.499742
+		3 8 0.50006400000000006 9 0.22080026566982269 13 0.27913573433017724
+		3 8 0.50410822033882141 9 0.25822661817073822 13 0.23766516149044037
+		3 8 0.502338 9 0.24883100000000002 13 0.248831
+		3 7 0.12892872095108032 8 0.72292338311672211 9 0.14814789593219757
+		4 7 0.061528090387582779 8 0.73979085311293602 9 0.16825067810714245 
+		13 0.030430378392338753
+		3 7 0.053667545318603516 8 0.79271245002746582 9 0.15362000465393066
+		2 8 0.91217899322509766 9 0.087821006774902344
+		2 8 0.88481834530830383 9 0.11518165469169617
+		3 8 0.5 9 0.38007035106420517 13 0.11992964893579483
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		2 9 0.5 13 0.5
+		3 8 0.5 9 0.43930093944072723 13 0.060699060559272766
+		3 8 0.46596604585647583 9 0.49999997764825821 13 0.034033976495265961
+		3 8 0.40670680999755859 9 0.56406400911509991 10 0.029229180887341499
+		3 8 0.027494115754961967 9 0.90609429217875004 10 0.066411592066287994
+		2 9 0.49999999999999994 10 0.5
+		2 9 0.074206948280334473 10 0.92579305171966553
+		3 7 0.086486339569091797 8 0.80965143442153931 9 0.1038622260093689
+		3 7 0.22880382835865021 8 0.71865299716591835 9 0.052543174475431442
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		2 9 0.17437511682510376 10 0.82562488317489624
+		3 9 0.53336483053863049 10 0.44568091630935669 13 0.020954253152012825
 		3 0 0.27921208739280701 7 0.360394 8 0.360393912607193
 		3 0 0.2926921546459198 7 0.353654 8 0.35365384535408018
 		3 0 0.31337952613830566 7 0.34331 8 0.34331047386169433
@@ -10229,325 +10283,355 @@ createNode skinCluster -n "skinCluster1";
 		3 0 0.2666662335395813 7 0.30006718635559082 8 0.43326658010482788
 		3 0 0.70984363555908203 7 0.24344306811690331 8 0.046713296324014664
 		3 0 0.89135820418596268 7 0.016149461269378662 8 0.092492334544658661
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1;
-	setAttr ".wl[1340:1800].w"
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		2 9 0.8718826025724411 10 0.1281173974275589
+		2 9 0.90148003399372101 10 0.098519966006278992
+		3 9 0.87496664561331272 10 0.099140837788581848 13 0.025892516598105431
+		3 9 0.82669439911842346 10 0.10643884539604187 13 0.066866755485534668
 		3 0 0.20887519419193268 7 0.099299140274524689 8 0.69182566553354263
 		3 0 0.2492232471704483 7 0.0584583580493927 8 0.692318394780159
 		3 0 0.27228796482086182 7 0.058992225676774979 8 0.6687198095023632
 		3 0 0.2794041633605957 7 0.086085937917232513 8 0.63450989872217178
 		3 0 0.28895515203475952 7 0.10904219001531601 8 0.60200265794992447
 		3 0 0.2773435115814209 7 0.092091932892799377 8 0.63056455552577972
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 7 0.17667746543884277 8 0.82332253456115723
-		2 7 0.17667746543884277 8 0.82332253456115723
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 9 0.051541268825531006 10 0.94845873117446899
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 9 0.064388647675514221 10 0.93561135232448578
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1;
+	setAttr ".wl[1625:1842].w"
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 9 0.033633574843406677 10 0.96636642515659332
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 9 2.2684019165968862e-08 10 0.99999997731598078
+		3 7 0.17667746543884277 8 0.73636887967586517 9 0.086953654885292053
+		3 7 0.17667746543884277 8 0.73636887967586517 9 0.086953654885292053
 		3 0 0.19590641558170319 7 0.084714151918888092 8 0.71937943249940872
 		3 0 0.17430734634399414 7 0.066065952181816101 8 0.75962670147418976
 		3 0 0.12345658242702484 7 0.10984297096729279 8 0.76670044660568237
 		3 0 0.17430734634399414 7 0.066065952181816101 8 0.75962670147418976
 		3 0 0.19590641558170319 7 0.084714151918888092 8 0.71937943249940872
-		1 8 1
+		2 8 0.93059737980365753 9 0.069402620196342468
+		3 8 0.47277283668518066 9 0.49586251750588417 10 0.031364645808935165
+		3 8 0.060193426907062531 9 0.86179696023464203 10 0.078009612858295441
+		2 9 0.5 10 0.5
+		2 9 0.12270534038543701 10 0.87729465961456299
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		1 10 1
+		2 9 0.12270534038543701 10 0.87729465961456299
+		2 9 0.5 10 0.5
+		3 8 0.060193426907062531 9 0.86179696023464203 10 0.078009612858295441
+		3 8 0.47277283668518066 9 0.49586251750588417 10 0.031364645808935165
+		2 8 0.93059737980365753 9 0.069402620196342468
 		1 9 1
 		1 9 1
 		1 9 1
@@ -10556,6 +10640,14 @@ createNode skinCluster -n "skinCluster1";
 		1 9 1
 		1 9 1
 		1 9 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
 		1 9 1
 		1 9 1
 		1 9 1
@@ -10564,6 +10656,14 @@ createNode skinCluster -n "skinCluster1";
 		1 9 1
 		1 9 1
 		1 9 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
 		1 9 1
 		1 9 1
 		1 9 1
@@ -10572,76 +10672,30 @@ createNode skinCluster -n "skinCluster1";
 		1 9 1
 		1 9 1
 		1 9 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
 		1 9 1
 		1 9 1
 		1 9 1
 		1 9 1
 		1 9 1
-		1 8 1
 		1 9 1
 		1 9 1
 		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
 		1 0 1
 		1 0 1
 		1 0 1
@@ -10697,9 +10751,7 @@ createNode skinCluster -n "skinCluster1";
 		3 0 0.30567264556884766 7 0.53510172665119171 8 0.15922562777996063
 		3 0 0.33143168687820435 7 0.50814148783683777 8 0.16042682528495789
 		3 0 0.46796804666519165 7 0.41004350036382675 8 0.1219884529709816
-		2 0 0.50333663821220398 7 0.3623727560043335;
-	setAttr ".wl[1800:1842].w"
-		1 8 0.13429060578346252
+		3 0 0.50333663821220398 7 0.3623727560043335 8 0.13429060578346252
 		3 0 0.5330997109413147 7 0.312079057097435 8 0.15482123196125031
 		3 0 0.52749410271644592 7 0.29778411984443665 8 0.17472177743911743
 		3 0 0.53363358974456787 7 0.30427417159080505 8 0.16209223866462708
@@ -10716,16 +10768,16 @@ createNode skinCluster -n "skinCluster1";
 		1 9 1
 		1 9 1
 		1 9 1
-		1 8 1
 		1 9 1
 		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		1 9 1
-		2 8 0.0024605989456176758 9 0.99753940105438232
-		1 9 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
+		1 13 1
 		1 0 1
 		1 0 1
 		1 0 1
@@ -10805,6 +10857,139 @@ createNode skinCluster -n "skinCluster1";
 	setAttr -s 19 ".ifcl";
 createNode tweak -n "tweak1";
 	rename -uid "558C7F9F-A14B-9D9B-3ACF-DAB768E67A4D";
+	setAttr -s 139 ".vl[0].vt";
+	setAttr ".vl[0].vt[496]" -type "float3" 0 -1.4901161e-08 9.3132257e-10 ;
+	setAttr ".vl[0].vt[498]" -type "float3" 0 -5.9604645e-08 -7.4505806e-09 ;
+	setAttr ".vl[0].vt[505]" -type "float3" 0 -2.2351742e-08 -1.8626451e-09 ;
+	setAttr ".vl[0].vt[508]" -type "float3" 0 1.4901161e-08 0 ;
+	setAttr ".vl[0].vt[509]" -type "float3" 0 0 -2.9802322e-08 ;
+	setAttr ".vl[0].vt[517]" -type "float3" 0 1.4901161e-08 1.8626451e-09 ;
+	setAttr ".vl[0].vt[519]" -type "float3" 0 -1.8626451e-09 -1.4901161e-08 ;
+	setAttr ".vl[0].vt[520]" -type "float3" 0 0 -3.7252903e-09 ;
+	setAttr ".vl[0].vt[526]" -type "float3" 0 -1.4901161e-08 -3.7252903e-09 ;
+	setAttr ".vl[0].vt[535]" -type "float3" 0 7.4505806e-09 -2.9802322e-08 ;
+	setAttr ".vl[0].vt[536]" -type "float3" 0 1.4901161e-08 -2.9802322e-08 ;
+	setAttr ".vl[0].vt[539]" -type "float3" 0 -1.4901161e-08 5.9604645e-08 ;
+	setAttr ".vl[0].vt[542]" -type "float3" 0 2.2351742e-08 0 ;
+	setAttr ".vl[0].vt[547]" -type "float3" 0 0 4.4703484e-08 ;
+	setAttr ".vl[0].vt[549]" -type "float3" 0 -1.4901161e-08 7.4505806e-09 ;
+	setAttr ".vl[0].vt[556]" -type "float3" 0 1.8626451e-09 2.9802322e-08 ;
+	setAttr ".vl[0].vt[559]" -type "float3" 0 5.9604645e-08 -2.9802322e-08 ;
+	setAttr ".vl[0].vt[565]" -type "float3" 0 1.4901161e-08 4.4703484e-08 ;
+	setAttr ".vl[0].vt[566]" -type "float3" 0 -5.9604645e-08 5.9604645e-08 ;
+	setAttr ".vl[0].vt[570]" -type "float3" 0 -1.4901161e-08 5.9604645e-08 ;
+	setAttr ".vl[0].vt[574]" -type "float3" 0 -2.2351742e-08 2.9802322e-08 ;
+	setAttr ".vl[0].vt[579]" -type "float3" 0 9.3132257e-10 -3.7252903e-09 ;
+	setAttr ".vl[0].vt[580]" -type "float3" 0 0 -3.7252903e-09 ;
+	setAttr ".vl[0].vt[583]" -type "float3" 0 -5.9604645e-08 7.4505806e-09 ;
+	setAttr ".vl[0].vt[635]" -type "float3" 0 3.7252903e-09 1.4901161e-08 ;
+	setAttr ".vl[0].vt[636]" -type "float3" 0 -3.7252903e-09 7.4505806e-09 ;
+	setAttr ".vl[0].vt[650]" -type "float3" 0 4.4703484e-08 1.8626451e-09 ;
+	setAttr ".vl[0].vt[672]" -type "float3" 0 2.9802322e-08 2.7939677e-09 ;
+	setAttr ".vl[0].vt[673]" -type "float3" 0 1.4901161e-08 -3.7252903e-09 ;
+	setAttr ".vl[0].vt[680]" -type "float3" 0 -7.4505806e-09 -7.4505806e-09 ;
+	setAttr ".vl[0].vt[683]" -type "float3" 0 3.3527613e-08 -7.4505806e-09 ;
+	setAttr ".vl[0].vt[684]" -type "float3" 0 1.1175871e-08 1.1175871e-08 ;
+	setAttr ".vl[0].vt[690]" -type "float3" 0 -1.4901161e-08 5.5879354e-09 ;
+	setAttr ".vl[0].vt[694]" -type "float3" 0 7.4505806e-09 -7.4505806e-09 ;
+	setAttr ".vl[0].vt[702]" -type "float3" 0 -3.7252903e-09 7.4505806e-08 ;
+	setAttr ".vl[0].vt[739]" -type "float3" 0 2.9802322e-08 1.4901161e-08 ;
+	setAttr ".vl[0].vt[740]" -type "float3" 0 -2.9802322e-08 2.9802322e-08 ;
+	setAttr ".vl[0].vt[741]" -type "float3" 0 -7.4505806e-09 0 ;
+	setAttr ".vl[0].vt[744]" -type "float3" 0 2.2351742e-08 -4.4703484e-08 ;
+	setAttr ".vl[0].vt[746]" -type "float3" 0 4.4703484e-08 -7.4505806e-08 ;
+	setAttr ".vl[0].vt[760]" -type "float3" 0 0 -3.7252903e-09 ;
+	setAttr ".vl[0].vt[772]" -type "float3" 0 -2.2351742e-08 0 ;
+	setAttr ".vl[0].vt[778]" -type "float3" 0 -2.9802322e-08 7.4505806e-09 ;
+	setAttr ".vl[0].vt[789]" -type "float3" 0 -1.4901161e-08 8.9406967e-08 ;
+	setAttr ".vl[0].vt[795]" -type "float3" 0 -4.4703484e-08 7.4505806e-09 ;
+	setAttr ".vl[0].vt[801]" -type "float3" 0 7.4505806e-09 -1.4901161e-08 ;
+	setAttr ".vl[0].vt[810]" -type "float3" 0 1.8626451e-08 3.7252903e-09 ;
+	setAttr ".vl[0].vt[815]" -type "float3" 0 -3.7252903e-09 2.9802322e-08 ;
+	setAttr ".vl[0].vt[834]" -type "float3" 0 -3.7252903e-09 1.1175871e-08 ;
+	setAttr ".vl[0].vt[839]" -type "float3" 0 -2.9802322e-08 -1.8626451e-09 ;
+	setAttr ".vl[0].vt[867]" -type "float3" 0 7.4505806e-08 1.4901161e-08 ;
+	setAttr ".vl[0].vt[906]" -type "float3" 0 -7.4505806e-09 -2.9802322e-08 ;
+	setAttr ".vl[0].vt[938]" -type "float3" 0 0 -2.2351742e-08 ;
+	setAttr ".vl[0].vt[946]" -type "float3" 0 -1.8626451e-09 -5.5879354e-09 ;
+	setAttr ".vl[0].vt[947]" -type "float3" 0 -3.7252903e-09 3.7252903e-09 ;
+	setAttr ".vl[0].vt[960]" -type "float3" 0 -3.7252903e-09 1.8626451e-09 ;
+	setAttr ".vl[0].vt[965]" -type "float3" 0 3.7252903e-09 7.4505806e-09 ;
+	setAttr ".vl[0].vt[998]" -type "float3" 0 1.8626451e-09 2.2351742e-08 ;
+	setAttr ".vl[0].vt[1009]" -type "float3" 0 0 -9.3132257e-09 ;
+	setAttr ".vl[0].vt[1010]" -type "float3" 0 5.9604645e-08 0 ;
+	setAttr ".vl[0].vt[1021]" -type "float3" 0 7.4505806e-09 3.7252903e-09 ;
+	setAttr ".vl[0].vt[1022]" -type "float3" 0 -1.4901161e-08 1.4901161e-08 ;
+	setAttr ".vl[0].vt[1126]" -type "float3" 0 -1.4901161e-08 8.9406967e-08 ;
+	setAttr ".vl[0].vt[1127]" -type "float3" 0 0 -2.9802322e-08 ;
+	setAttr ".vl[0].vt[1129]" -type "float3" 0 -7.4505806e-09 -2.9802322e-08 ;
+	setAttr ".vl[0].vt[1145]" -type "float3" 0 -2.9802322e-08 3.7252903e-08 ;
+	setAttr ".vl[0].vt[1147]" -type "float3" 0 2.9802322e-08 1.4901161e-08 ;
+	setAttr ".vl[0].vt[1155]" -type "float3" 0 -1.4901161e-08 0 ;
+	setAttr ".vl[0].vt[1156]" -type "float3" 0 -4.4703484e-08 2.2351742e-08 ;
+	setAttr ".vl[0].vt[1157]" -type "float3" 0 -2.9802322e-08 -1.4901161e-08 ;
+	setAttr ".vl[0].vt[1158]" -type "float3" 0 -1.4901161e-08 0 ;
+	setAttr ".vl[0].vt[1160]" -type "float3" 0 -1.0430813e-07 4.4703484e-08 ;
+	setAttr ".vl[0].vt[1164]" -type "float3" 0 3.7252903e-08 -1.7881393e-07 ;
+	setAttr ".vl[0].vt[1166]" -type "float3" 0 0 5.9604645e-08 ;
+	setAttr ".vl[0].vt[1177]" -type "float3" 0 1.4901161e-08 2.9802322e-08 ;
+	setAttr ".vl[0].vt[1193]" -type "float3" 0 -2.9802322e-08 7.4505806e-09 ;
+	setAttr ".vl[0].vt[1194]" -type "float3" 0 2.2351742e-08 0 ;
+	setAttr ".vl[0].vt[1201]" -type "float3" 0 -4.4703484e-08 -2.2351742e-08 ;
+	setAttr ".vl[0].vt[1202]" -type "float3" 0 -1.4901161e-08 2.2351742e-08 ;
+	setAttr ".vl[0].vt[1205]" -type "float3" 0 4.4703484e-08 3.7252903e-09 ;
+	setAttr ".vl[0].vt[1207]" -type "float3" 0 -1.4901161e-08 -1.4901161e-08 ;
+	setAttr ".vl[0].vt[1214]" -type "float3" 0 -3.7252903e-08 5.5879354e-09 ;
+	setAttr ".vl[0].vt[1215]" -type "float3" 0 1.4901161e-08 3.7252903e-09 ;
+	setAttr ".vl[0].vt[1220]" -type "float3" 0 -2.2351742e-08 0 ;
+	setAttr ".vl[0].vt[1224]" -type "float3" 0 7.4505806e-09 -3.7252903e-09 ;
+	setAttr ".vl[0].vt[1232]" -type "float3" 0 -3.7252903e-08 -4.6566129e-10 ;
+	setAttr ".vl[0].vt[1247]" -type "float3" 0 -8.9406967e-08 2.9802322e-08 ;
+	setAttr ".vl[0].vt[1259]" -type "float3" 0 2.9802322e-08 2.9802322e-08 ;
+	setAttr ".vl[0].vt[1260]" -type "float3" 0 -1.4901161e-08 7.4505806e-08 ;
+	setAttr ".vl[0].vt[1274]" -type "float3" 0 4.4703484e-08 5.9604645e-08 ;
+	setAttr ".vl[0].vt[1277]" -type "float3" 0 4.4703484e-08 -1.4901161e-08 ;
+	setAttr ".vl[0].vt[1291]" -type "float3" 0 1.4901161e-08 1.4901161e-08 ;
+	setAttr ".vl[0].vt[1294]" -type "float3" 0 0 -4.4703484e-08 ;
+	setAttr ".vl[0].vt[1302]" -type "float3" 0 -2.2351742e-08 -3.7252903e-09 ;
+	setAttr ".vl[0].vt[1314]" -type "float3" 0 -2.2351742e-08 0 ;
+	setAttr ".vl[0].vt[1318]" -type "float3" 0 5.9604645e-08 2.2351742e-08 ;
+	setAttr ".vl[0].vt[1326]" -type "float3" 0 2.9802322e-08 -2.9802322e-08 ;
+	setAttr ".vl[0].vt[1335]" -type "float3" 0 4.4703484e-08 -2.2351742e-08 ;
+	setAttr ".vl[0].vt[1339]" -type "float3" 0 -7.4505806e-08 -7.4505806e-09 ;
+	setAttr ".vl[0].vt[1346]" -type "float3" 0 -1.4901161e-08 -1.8626451e-09 ;
+	setAttr ".vl[0].vt[1348]" -type "float3" 0 2.9802322e-08 2.9802322e-08 ;
+	setAttr ".vl[0].vt[1425]" -type "float3" 0 -2.9802322e-08 7.4505806e-09 ;
+	setAttr ".vl[0].vt[1426]" -type "float3" 0 -1.4901161e-08 -1.4901161e-08 ;
+	setAttr ".vl[0].vt[1427]" -type "float3" 0 1.4901161e-08 -1.4901161e-08 ;
+	setAttr ".vl[0].vt[1428]" -type "float3" 0 7.4505806e-09 -2.9802322e-08 ;
+	setAttr ".vl[0].vt[1429]" -type "float3" 0 -1.8626451e-09 5.9604645e-08 ;
+	setAttr ".vl[0].vt[1430]" -type "float3" 0 0 2.9802322e-08 ;
+	setAttr ".vl[0].vt[1431]" -type "float3" 0 7.4505806e-09 8.9406967e-08 ;
+	setAttr ".vl[0].vt[1576]" -type "float3" 0 -4.4703484e-08 -1.4901161e-08 ;
+	setAttr ".vl[0].vt[1581]" -type "float3" 0 1.4901161e-08 3.7252903e-08 ;
+	setAttr ".vl[0].vt[1604]" -type "float3" 0 1.4901161e-08 -7.4505806e-08 ;
+	setAttr ".vl[0].vt[1621]" -type "float3" 0 -4.6566129e-10 3.7252903e-09 ;
+	setAttr ".vl[0].vt[1629]" -type "float3" 0 -2.9802322e-08 -1.8626451e-08 ;
+	setAttr ".vl[0].vt[1634]" -type "float3" 0 0 -2.2351742e-08 ;
+	setAttr ".vl[0].vt[1647]" -type "float3" 0 -2.9802322e-08 1.4901161e-08 ;
+	setAttr ".vl[0].vt[1665]" -type "float3" 0 -7.4505806e-09 -5.9604645e-08 ;
+	setAttr ".vl[0].vt[1690]" -type "float3" 0 -7.4505806e-08 -7.4505806e-09 ;
+	setAttr ".vl[0].vt[1694]" -type "float3" 0 -1.4901161e-08 -5.9604645e-08 ;
+	setAttr ".vl[0].vt[1706]" -type "float3" 0 0 -1.8626451e-08 ;
+	setAttr ".vl[0].vt[1710]" -type "float3" 0 -1.4901161e-08 -2.9802322e-08 ;
+	setAttr ".vl[0].vt[1726]" -type "float3" 0 1.4901161e-08 -2.9802322e-08 ;
+	setAttr ".vl[0].vt[1739]" -type "float3" 0 -1.4901161e-08 3.7252903e-08 ;
+	setAttr ".vl[0].vt[1743]" -type "float3" 0 -1.4901161e-08 4.4703484e-08 ;
+	setAttr ".vl[0].vt[1753]" -type "float3" 0 4.4703484e-08 2.9802322e-08 ;
+	setAttr ".vl[0].vt[1775]" -type "float3" 0 -4.4703484e-08 -1.4901161e-07 ;
+	setAttr ".vl[0].vt[1791]" -type "float3" 0 5.2154064e-08 0 ;
+	setAttr ".vl[0].vt[1797]" -type "float3" 0 -1.1175871e-08 0 ;
+	setAttr ".vl[0].vt[1801]" -type "float3" 0 -2.9802322e-08 -5.9604645e-08 ;
+	setAttr ".vl[0].vt[1806]" -type "float3" 0 -4.4703484e-08 0 ;
+	setAttr ".vl[0].vt[1820]" -type "float3" 0 2.9802322e-08 -4.4703484e-08 ;
+	setAttr ".vl[0].vt[1824]" -type "float3" 0 7.4505806e-08 4.4703484e-08 ;
+	setAttr ".vl[0].vt[1835]" -type "float3" 0 1.4901161e-08 -8.9406967e-08 ;
 createNode objectSet -n "skinCluster1Set";
 	rename -uid "5B1E87F5-3744-7096-1E84-8DA27D03A840";
 	setAttr ".ihi" 0;
@@ -10982,8 +11167,8 @@ createNode dagPose -n "bindPose1";
 		yes no yes yes no no no yes yes no no no;
 	setAttr ".bp" yes;
 select -ne :time1;
-	setAttr ".o" 60;
-	setAttr ".unw" 60;
+	setAttr ".o" 1;
+	setAttr ".unw" 1;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -11056,27 +11241,27 @@ connectAttr "BaseRigRN1.phl[35]" "skinCluster1.lw[8]";
 connectAttr "BaseRigRN1.phl[36]" "skinCluster1.ma[8]";
 connectAttr "BaseRigRN1.phl[37]" "skinCluster1.ifcl[8]";
 connectAttr "BaseRigRN1.phl[38]" "bindPose1.m[10]";
-connectAttr "BaseRigRN1.phl[39]" "skinCluster1.ptt";
-connectAttr "BaseRigRN1.phl[40]" "skinCluster1.lw[9]";
-connectAttr "BaseRigRN1.phl[41]" "skinCluster1.ma[9]";
-connectAttr "BaseRigRN1.phl[42]" "skinCluster1.ifcl[9]";
-connectAttr "BaseRigRN1.phl[43]" "bindPose1.m[11]";
-connectAttr "BaseRigRN1.phl[44]" "skinCluster1.lw[10]";
-connectAttr "BaseRigRN1.phl[45]" "skinCluster1.ma[10]";
-connectAttr "BaseRigRN1.phl[46]" "skinCluster1.ifcl[10]";
-connectAttr "BaseRigRN1.phl[47]" "bindPose1.m[13]";
-connectAttr "BaseRigRN1.phl[48]" "skinCluster1.lw[11]";
-connectAttr "BaseRigRN1.phl[49]" "skinCluster1.ma[11]";
-connectAttr "BaseRigRN1.phl[50]" "skinCluster1.ifcl[11]";
-connectAttr "BaseRigRN1.phl[51]" "bindPose1.m[12]";
-connectAttr "BaseRigRN1.phl[52]" "bindPose1.m[15]";
-connectAttr "BaseRigRN1.phl[53]" "skinCluster1.lw[12]";
-connectAttr "BaseRigRN1.phl[54]" "skinCluster1.ma[12]";
-connectAttr "BaseRigRN1.phl[55]" "skinCluster1.ifcl[12]";
-connectAttr "BaseRigRN1.phl[56]" "bindPose1.m[14]";
-connectAttr "BaseRigRN1.phl[57]" "bindPose1.m[16]";
-connectAttr "BaseRigRN1.phl[58]" "bindPose1.m[17]";
-connectAttr "BaseRigRN1.phl[59]" "skinCluster1.lw[13]";
+connectAttr "BaseRigRN1.phl[39]" "skinCluster1.lw[9]";
+connectAttr "BaseRigRN1.phl[40]" "skinCluster1.ma[9]";
+connectAttr "BaseRigRN1.phl[41]" "skinCluster1.ifcl[9]";
+connectAttr "BaseRigRN1.phl[42]" "bindPose1.m[11]";
+connectAttr "BaseRigRN1.phl[43]" "skinCluster1.lw[10]";
+connectAttr "BaseRigRN1.phl[44]" "skinCluster1.ma[10]";
+connectAttr "BaseRigRN1.phl[45]" "skinCluster1.ifcl[10]";
+connectAttr "BaseRigRN1.phl[46]" "bindPose1.m[13]";
+connectAttr "BaseRigRN1.phl[47]" "skinCluster1.lw[11]";
+connectAttr "BaseRigRN1.phl[48]" "skinCluster1.ma[11]";
+connectAttr "BaseRigRN1.phl[49]" "skinCluster1.ifcl[11]";
+connectAttr "BaseRigRN1.phl[50]" "bindPose1.m[12]";
+connectAttr "BaseRigRN1.phl[51]" "bindPose1.m[15]";
+connectAttr "BaseRigRN1.phl[52]" "skinCluster1.lw[12]";
+connectAttr "BaseRigRN1.phl[53]" "skinCluster1.ma[12]";
+connectAttr "BaseRigRN1.phl[54]" "skinCluster1.ifcl[12]";
+connectAttr "BaseRigRN1.phl[55]" "bindPose1.m[14]";
+connectAttr "BaseRigRN1.phl[56]" "bindPose1.m[16]";
+connectAttr "BaseRigRN1.phl[57]" "bindPose1.m[17]";
+connectAttr "BaseRigRN1.phl[58]" "skinCluster1.lw[13]";
+connectAttr "BaseRigRN1.phl[59]" "skinCluster1.ptt";
 connectAttr "BaseRigRN1.phl[60]" "bindPose1.m[18]";
 connectAttr "BaseRigRN1.phl[61]" "skinCluster1.ma[13]";
 connectAttr "BaseRigRN1.phl[62]" "skinCluster1.ifcl[13]";
