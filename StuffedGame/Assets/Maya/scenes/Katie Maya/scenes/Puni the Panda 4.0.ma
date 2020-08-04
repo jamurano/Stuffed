@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Puni the Panda 4.0.ma
-//Last modified: Tue, Aug 04, 2020 03:04:53 PM
+//Last modified: Tue, Aug 04, 2020 03:27:50 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "BaseRig1" -rfn "BaseRigRN1" -op "v=0;p=17;f=0" -typ "mayaAscii"
 		 "/Users/Katie/StuffedAgain/Stuffed/StuffedGame/Assets/Maya/scenes/BaseRig.ma";
@@ -15,18 +15,18 @@ fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Mac OS X 10.15.6";
 fileInfo "license" "student";
-fileInfo "UUID" "DABEB8D2-BB4F-0FE6-9883-308280B0D407";
+fileInfo "UUID" "638735B9-3B49-1A9F-9F23-808EDEA16C44";
 createNode transform -s -n "persp";
 	rename -uid "425F33C5-074E-0DDA-57FF-A083BEB032D3";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.23230895240571 4.6351599147302744 18.353211445747018 ;
-	setAttr ".r" -type "double3" 359.06164682456176 14406.199999986738 0 ;
+	setAttr ".t" -type "double3" 6.2052996901884656 5.1076402848603788 11.085034708336103 ;
+	setAttr ".r" -type "double3" 356.66164682455729 14426.599999986684 -2.2231585936559479e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "77E8AA9E-234E-68FC-26D2-21B85028178A";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 19.530457764652294;
+	setAttr ".coi" 13.606252102586721;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -5473,7 +5473,7 @@ createNode mesh -n "L_earShapeOrig" -p "Puni_the_Panda_2_6:L_ear1";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode fosterParent -n "BaseRigRN1fosterParent1";
-	rename -uid "333A30B0-6445-AF73-85B9-9D8FC68FB3E0";
+	rename -uid "F6A33554-104D-47C8-1CC3-F199DAFA3DBB";
 createNode transform -n "Puni_the_Panda_2_10:EyeMesh_R" -p "BaseRigRN1fosterParent1";
 	rename -uid "03EB3416-1949-F1C0-9BA4-3F9B00DC1CDD";
 	setAttr ".t" -type "double3" -0.76422435045243142 -5.6625080108642578 -0.76102703809738104 ;
@@ -8058,25 +8058,25 @@ createNode mesh -n "Puni_the_Panda_2_10:EyeMesh_LShape" -p "Puni_the_Panda_2_10:
 	setAttr ".dmb" yes;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "0902D3C9-1F43-9E76-89C0-2DBF503150C9";
+	rename -uid "7D41040E-024E-1145-8CA5-079F7CA97F06";
 	setAttr -s 14 ".lnk";
 	setAttr -s 14 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "50D371C7-7245-796F-43D4-9EA4D9661034";
+	rename -uid "EA749CF8-3A41-673A-A000-AF917AA0A3A9";
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "E7C5F4A4-1A43-5AA7-BC6D-F3BC66616717";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "5F7B43D4-224E-54B8-E2E5-6F9B1386849E";
+	rename -uid "D0B59BC2-3441-E645-BB9D-2AACDA919332";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "FF83EB3D-CE4E-B5AE-86C3-BEBE5F5E5A78";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "E07113AE-334F-F7E2-7E7F-67AAAAC0C815";
+	rename -uid "41819B71-4A4C-7912-BE68-F4AD9FEF5C79";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "7B3E9770-EB4D-3B0D-D1E3-3BA70D8C9D3C";
+	rename -uid "B55593E2-3D47-CBF3-EDD8-4EB3F5876FD4";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "0A41BEBB-A04A-3F4E-1C8A-B69EEECED819";
 	setAttr ".b" -type "string" (
@@ -8396,7 +8396,7 @@ createNode animCurveTA -n "BaseCharacterSet_Hip_J_R_CTRL_rotateZ";
 	setAttr -s 4 ".ktv[0:3]"  80 0 90 45.000000000000014 100 0 110 -45.000000000000014;
 createNode reference -n "BaseRigRN1";
 	rename -uid "F73F5F77-4B4F-D95D-5582-439714A65702";
-	setAttr -s 92 ".phl";
+	setAttr -s 89 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -8486,13 +8486,10 @@ createNode reference -n "BaseRigRN1";
 	setAttr ".phl[87]" 0;
 	setAttr ".phl[88]" 0;
 	setAttr ".phl[89]" 0;
-	setAttr ".phl[90]" 0;
-	setAttr ".phl[91]" 0;
-	setAttr ".phl[92]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BaseRigRN1"
 		"BaseRigRN1" 0
-		"BaseRigRN1" 294
+		"BaseRigRN1" 291
 		0 "|BaseRigRN1fosterParent1|Puni_the_Panda_2_10:EyeMesh_L" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:Eye_J_L" 
 		"-s -r "
 		0 "|BaseRigRN1fosterParent1|Puni_the_Panda_2_10:EyeMesh_R" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:Eye_J_R" 
@@ -8783,7 +8780,7 @@ createNode reference -n "BaseRigRN1";
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:head_J_GRP|BaseRig1:head_J_CTRL" 
 		"rotateX" " -av"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:head_J_GRP|BaseRig1:head_J_CTRL|BaseRig1:EyeLid_J_L_GRP|BaseRig1:EyeLid_J_L_CTRL" 
-		"rotate" " -type \"double3\" 0 0 25"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:head_J_GRP|BaseRig1:head_J_CTRL|BaseRig1:EyeLid_J_L_GRP|BaseRig1:EyeLid_J_L_CTRL" 
 		"rotateZ" " -av"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:head_J_GRP|BaseRig1:head_J_CTRL|BaseRig1:EyeLid_J_L_GRP|BaseRig1:EyeLid_J_L_CTRL" 
@@ -8799,7 +8796,7 @@ createNode reference -n "BaseRigRN1";
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:head_J_GRP|BaseRig1:head_J_CTRL|BaseRig1:Eye_J_L_GRP|BaseRig1:Eye_J_L_CTRL" 
 		"rotateX" " -av"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:head_J_GRP|BaseRig1:head_J_CTRL|BaseRig1:EyeLid_J_R_GRP|BaseRig1:EyeLid_J_R_CTRL" 
-		"rotate" " -type \"double3\" 0 0 25"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:head_J_GRP|BaseRig1:head_J_CTRL|BaseRig1:EyeLid_J_R_GRP|BaseRig1:EyeLid_J_R_CTRL" 
 		"rotateZ" " -av"
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:head_J_GRP|BaseRig1:head_J_CTRL|BaseRig1:EyeLid_J_R_GRP|BaseRig1:EyeLid_J_R_CTRL" 
@@ -8883,7 +8880,7 @@ createNode reference -n "BaseRigRN1";
 		2 "|BaseRig1:Transform_Ctrl_Grp|BaseRig1:Transform_Ctrl|BaseRig1:Root_J_GRP|BaseRig1:Root_J_CTRL|BaseRig1:LowerBack_J_GRP|BaseRig1:LowerBack_J_CTRL|BaseRig1:MiddleBack_j_GRP|BaseRig1:MiddleBack_j_CTRL|BaseRig1:UpperBack_j_GRP|BaseRig1:UpperBack_j_CTRL|BaseRig1:Clavical_J_R_GRP|BaseRig1:Clavical_J_R_CTRL|BaseRig1:Shoulder_J_R2_GRP|BaseRig1:Shoulder_J_R2_CTRL|BaseRig1:Arm_R_FK_Master_Ctrl_Grp|BaseRig1:Shoulder_J_R_GRP|BaseRig1:Shoulder_J_R_CTRL|BaseRig1:Elbow_J_R_GRP|BaseRig1:Elbow_J_R_CTRL|BaseRig1:Wrist_J_R_GRP|BaseRig1:Wrist_J_R_CTRL" 
 		"rotateX" " -av"
 		2 "BaseRig1:Joints" "displayType" " 0"
-		2 "BaseRig1:BaseCharacterSet" "av[1:81]" " -s 81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+		2 "BaseRig1:BaseCharacterSet" "av[1:81]" " -s 81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 		
 		2 "BaseRig1:BaseCharacterSet" "angularValues" " -s 81"
 		2 "BaseRig1:BaseCharacterSet" "referenceMapping" (" -type \"characterMapping\" 84 \"BaseRig1:Hip_J_R_CTRL.rotateZ\" 2 1 \"BaseRig1:Hip_J_R_CTRL.rotateY\" 2 2 \"BaseRig1:Hip_J_R_CTRL.rotateX\" 2 3 \"BaseRig1:Knee_J_R_CTRL.rotateZ\" 2 4 \"BaseRig1:Knee_J_R_CTRL.rotateY\" 2 5 \"BaseRig1:Knee_J_R_CTRL.rotateX\" 2 6 \"BaseRig1:Ankle_J_R_CTRL.rotateZ\" 2 7 \"BaseRig1:Ankle_J_R_CTRL.rotateY\" 2 8 \"BaseRig1:Ankle_J_R_CTRL.rotateX\" 2 9 \"BaseRig1:Root_J_CTRL.rotateZ\" 2 10 \"BaseRig1:Root_J_CTRL.rotateY\" 2 11 \"BaseRig1:Root_J_CTRL.rotateX\" 2 12 \"BaseRig1:Root_J_CTRL.translateZ\" 1 1 \"BaseRig1:Root_J_CTRL.translateY\" 1 2 \"BaseRig1:Root_J_CTRL.translateX\" 1 3 \"BaseRig1:Pelvis_J_CTRL.rotateZ\" 2 13 \"BaseRig1:Pelvis_J_CTRL.rotateY\" 2 14 \"BaseRig1:Pelvis_J_CTRL.rotateX\" 2 15 \"BaseRig1:Hip_J_L_CTRL.rotateZ\" 2 16 \"BaseRig1:Hip_J_L_CTRL.rotateY\" 2 17 \"BaseRig1:Hip_J_L_CTRL.rotateX\" 2 18 \"BaseRig1:Knee_J_L_CTRL.rotateZ\" 2 19 \"BaseRig1:Knee_J_L_CTRL.rotateY\" 2 20 \"BaseRig1:Knee_J_L_CTRL.rotateX\" 2 21 \"BaseRig1:Ankle_J_L_CTRL.rotateZ\" 2 22 \"BaseRig1:Ankle_J_L_CTRL.rotateY\" 2 23 \"BaseRig1:Ankle_J_L_CTR"
@@ -9009,11 +9006,11 @@ createNode reference -n "BaseRigRN1";
 		"BaseRigRN1.placeHolderList[57]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:Jaw_J.bindPose" 
 		"BaseRigRN1.placeHolderList[58]" ""
-		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:Jaw_J.worldMatrix" 
-		"BaseRigRN1.placeHolderList[59]" ""
-		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:Jaw_J.objectColorRGB" 
-		"BaseRigRN1.placeHolderList[60]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:Jaw_J.lockInfluenceWeights" 
+		"BaseRigRN1.placeHolderList[59]" ""
+		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:Jaw_J.worldMatrix" 
+		"BaseRigRN1.placeHolderList[60]" ""
+		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:head_J|BaseRig1:Jaw_J.objectColorRGB" 
 		"BaseRigRN1.placeHolderList[61]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_L.message" 
 		"BaseRigRN1.placeHolderList[62]" ""
@@ -9070,13 +9067,7 @@ createNode reference -n "BaseRigRN1";
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_R|BaseRig1:Shoulder_J_R2_RK|BaseRig1:Shoulder_J_R_RK|BaseRig1:Elbow_J_R_RK|BaseRig1:Wrist_J_R_RK.worldMatrix" 
 		"BaseRigRN1.placeHolderList[88]" ""
 		5 3 "BaseRigRN1" "|BaseRig1:Root_J|BaseRig1:LowerBack_J|BaseRig1:MiddleBack_j|BaseRig1:UpperBack_j|BaseRig1:Clavical_J_R|BaseRig1:Shoulder_J_R2_RK|BaseRig1:Shoulder_J_R_RK|BaseRig1:Elbow_J_R_RK|BaseRig1:Wrist_J_R_RK.objectColorRGB" 
-		"BaseRigRN1.placeHolderList[89]" ""
-		5 4 "BaseRigRN1" "BaseRig1:BaseCharacterSet.angularValues[40]" "BaseRigRN1.placeHolderList[90]" 
-		""
-		5 4 "BaseRigRN1" "BaseRig1:BaseCharacterSet.angularValues[41]" "BaseRigRN1.placeHolderList[91]" 
-		""
-		5 4 "BaseRigRN1" "BaseRig1:BaseCharacterSet.angularValues[42]" "BaseRigRN1.placeHolderList[92]" 
-		"";
+		"BaseRigRN1.placeHolderList[89]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode skinCluster -n "skinCluster1";
@@ -11021,9 +11012,8 @@ createNode skinCluster -n "skinCluster1";
 	setAttr ".pm[18]" -type "matrix" 0.74311038342101554 0.66916885615804922 1.3994831728072665e-15 0
 		 0.66916885615804911 -0.74311038342101565 -2.3332289681155005e-15 0 -5.7012410106991778e-16 2.6240503465377787e-15 -1.0000000000000004 0
 		 -0.56331828302429732 2.926059166184197 6.1129570110498559e-15 1;
-	setAttr ".pm[20]" -type "matrix" 1.7763568394002505e-15 7.8886090522101181e-31 -1 -0
-		 -4.4408920985006262e-16 1 -0 0 1 4.4408920985006262e-16 1.7763568394002505e-15 -0
-		 -0.57405601912158077 -4.5129279113493288 -9.7942648978742788e-16 1;
+	setAttr ".pm[20]" -type "matrix" 1.7763568394002505e-15 7.8886090522101181e-31 -1 0
+		 -4.4408920985006262e-16 1 0 0 1 4.4408920985006262e-16 1.7763568394002505e-15 0 -0.57405601912158077 -4.5129279113493288 -9.7942648978742788e-16 1;
 	setAttr ".gm" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 	setAttr -s 20 ".ma";
 	setAttr -s 20 ".dpf";
@@ -11361,7 +11351,7 @@ createNode dagPose -n "bindPose1";
 		 9.7942648978742769e-16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 yes;
 	setAttr -s 27 ".m";
 	setAttr -s 27 ".p";
-	setAttr -s 27 ".g";
+	setAttr -s 7 ".g";
 	setAttr ".g[0]" yes;
 	setAttr ".g[12]" yes;
 	setAttr ".g[14]" yes;
@@ -11370,21 +11360,6 @@ createNode dagPose -n "bindPose1";
 	setAttr ".g[21]" yes;
 	setAttr ".g[22]" yes;
 	setAttr ".bp" yes;
-createNode animCurveTA -n "BaseCharacterSet_EyeLid_J_L_CTRL_rotateX";
-	rename -uid "06C79AF4-EA45-52C1-294A-BB93290E58E9";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 10 0 20 0 30 0 40 0;
-createNode animCurveTA -n "BaseCharacterSet_EyeLid_J_L_CTRL_rotateY";
-	rename -uid "003F23A6-2E4B-8E30-EEF1-F5AF75E9D2A8";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 10 0 20 0 30 0 40 0;
-createNode animCurveTA -n "BaseCharacterSet_EyeLid_J_L_CTRL_rotateZ";
-	rename -uid "5E91A48E-E64F-6EAE-F159-E4AFD79EA6AD";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 0 10 -29.999999999999996 20 0 30 25 40 0;
 createNode groupId -n "groupId25";
 	rename -uid "4288E58D-824B-3845-4EE0-96ADD1BC298A";
 	setAttr ".ihi" 0;
@@ -11482,9 +11457,9 @@ connectAttr "BaseRigRN1.phl[55]" "skinCluster1.ifcl[12]";
 connectAttr "BaseRigRN1.phl[56]" "bindPose1.m[14]";
 connectAttr "BaseRigRN1.phl[57]" "bindPose1.m[27]";
 connectAttr "BaseRigRN1.phl[58]" "bindPose1.wm[27]";
-connectAttr "BaseRigRN1.phl[59]" "skinCluster1.ma[20]";
-connectAttr "BaseRigRN1.phl[60]" "skinCluster1.ifcl[20]";
-connectAttr "BaseRigRN1.phl[61]" "skinCluster1.lw[20]";
+connectAttr "BaseRigRN1.phl[59]" "skinCluster1.lw[20]";
+connectAttr "BaseRigRN1.phl[60]" "skinCluster1.ma[20]";
+connectAttr "BaseRigRN1.phl[61]" "skinCluster1.ifcl[20]";
 connectAttr "BaseRigRN1.phl[62]" "bindPose1.m[16]";
 connectAttr "BaseRigRN1.phl[63]" "bindPose1.m[17]";
 connectAttr "BaseRigRN1.phl[64]" "skinCluster1.lw[13]";
@@ -11513,9 +11488,6 @@ connectAttr "BaseRigRN1.phl[86]" "skinCluster1.lw[18]";
 connectAttr "BaseRigRN1.phl[87]" "bindPose1.m[25]";
 connectAttr "BaseRigRN1.phl[88]" "skinCluster1.ma[18]";
 connectAttr "BaseRigRN1.phl[89]" "skinCluster1.ifcl[18]";
-connectAttr "BaseCharacterSet_EyeLid_J_L_CTRL_rotateZ.o" "BaseRigRN1.phl[90]";
-connectAttr "BaseCharacterSet_EyeLid_J_L_CTRL_rotateY.o" "BaseRigRN1.phl[91]";
-connectAttr "BaseCharacterSet_EyeLid_J_L_CTRL_rotateX.o" "BaseRigRN1.phl[92]";
 connectAttr "skinCluster1.og[0]" "Puni_the_Panda_2_6:L_earShape.i";
 connectAttr "groupId20.id" "Puni_the_Panda_2_6:L_earShape.iog.og[0].gid";
 connectAttr "Puni_the_Panda_2_6:lambert2SG.mwc" "Puni_the_Panda_2_6:L_earShape.iog.og[0].gco"
