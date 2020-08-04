@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Puni Animations.ma
-//Last modified: Tue, Aug 04, 2020 03:20:40 PM
+//Last modified: Tue, Aug 04, 2020 03:23:51 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "Puni_the_Panda_4_0" -rfn "Puni_the_Panda_4_0RN" -op "v=0;p=17;f=0"
 		 -typ "mayaAscii" "/Users/Katie/StuffedAgain/Stuffed/StuffedGame/Assets/Maya/scenes/Katie Maya/scenes/Puni the Panda 4.0.ma";
@@ -16,18 +16,18 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Mac OS X 10.15.6";
-fileInfo "UUID" "6F3AE828-6C4E-E7F0-881D-2A82891A155A";
+fileInfo "UUID" "FB3F8B3B-5443-7E57-32E9-E39672B1CF09";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "69450853-634F-C5CC-AAB8-F795205E93F5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.1726995835769447 4.9004956028323532 3.1792868477357663 ;
-	setAttr ".r" -type "double3" -3.9383527296041003 65.400000000001342 0 ;
+	setAttr ".t" -type "double3" 7.7931791529102323 3.3325390912974018 6.1818968636912963 ;
+	setAttr ".r" -type "double3" 3.8616472703948452 51.80000000000004 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5B81B459-674A-7992-FDBC-F4B7601FC463";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 6.397256384572545;
+	setAttr ".coi" 9.1826422652270239;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -84,22 +84,22 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A3B3AB42-3845-AB4D-C1C5-3BAE40547109";
+	rename -uid "6C968AEE-1B44-4A61-E233-CBBF1717E4DA";
 	setAttr -s 14 ".lnk";
 	setAttr -s 14 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "56F57154-1146-6323-ECCA-E5B1CBAC5336";
+	rename -uid "E06ED776-924F-7E7E-F37D-269E551ECC1C";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 0 1 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "23A2BFBF-0946-7669-1EF8-E8A7F32DC2A2";
+	rename -uid "6508A155-254E-8F9F-F2A9-8F997C44D861";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "47558EF8-E340-C6E3-F8E6-CF9A319A754B";
+	rename -uid "34E980EB-3C42-C458-7403-828965E202D8";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "048EBB24-FD45-3825-D437-55A0BE2B03AB";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C6C12D21-4346-4951-4836-3A8B84CFC359";
+	rename -uid "3128F56E-B34B-280D-ECFF-32BEBAE52187";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "6A4377E0-8242-B280-A985-24BB7DFE8238";
 	setAttr ".g" yes;
@@ -109,7 +109,15 @@ createNode reference -n "Puni_the_Panda_4_0RN";
 		"Puni_the_Panda_4_0RN"
 		"Puni_the_Panda_4_0:BaseRigRN1" 0
 		"Puni_the_Panda_4_0RN" 0
-		"Puni_the_Panda_4_0:BaseRigRN1" 152
+		"Puni_the_Panda_4_0:BaseRigRN1" 156
+		2 "|Puni_the_Panda_4_0:BaseRig1:Root_J|Puni_the_Panda_4_0:BaseRig1:LowerBack_J|Puni_the_Panda_4_0:BaseRig1:MiddleBack_j|Puni_the_Panda_4_0:BaseRig1:UpperBack_j|Puni_the_Panda_4_0:BaseRig1:Clavical_J_L|Puni_the_Panda_4_0:BaseRig1:Shoulder_J_L2_RK|Puni_the_Panda_4_0:BaseRig1:Shoulder_J_L_RK" 
+		"rotate" " -type \"double3\" 0 0 5.02479226267205092"
+		2 "|Puni_the_Panda_4_0:BaseRig1:Root_J|Puni_the_Panda_4_0:BaseRig1:LowerBack_J|Puni_the_Panda_4_0:BaseRig1:MiddleBack_j|Puni_the_Panda_4_0:BaseRig1:UpperBack_j|Puni_the_Panda_4_0:BaseRig1:Clavical_J_L|Puni_the_Panda_4_0:BaseRig1:Shoulder_J_L2_RK|Puni_the_Panda_4_0:BaseRig1:Shoulder_J_L_RK" 
+		"rotateX" " -av"
+		2 "|Puni_the_Panda_4_0:BaseRig1:Root_J|Puni_the_Panda_4_0:BaseRig1:LowerBack_J|Puni_the_Panda_4_0:BaseRig1:MiddleBack_j|Puni_the_Panda_4_0:BaseRig1:UpperBack_j|Puni_the_Panda_4_0:BaseRig1:Clavical_J_L|Puni_the_Panda_4_0:BaseRig1:Shoulder_J_L2_RK|Puni_the_Panda_4_0:BaseRig1:Shoulder_J_L_RK" 
+		"rotateY" " -av"
+		2 "|Puni_the_Panda_4_0:BaseRig1:Root_J|Puni_the_Panda_4_0:BaseRig1:LowerBack_J|Puni_the_Panda_4_0:BaseRig1:MiddleBack_j|Puni_the_Panda_4_0:BaseRig1:UpperBack_j|Puni_the_Panda_4_0:BaseRig1:Clavical_J_L|Puni_the_Panda_4_0:BaseRig1:Shoulder_J_L2_RK|Puni_the_Panda_4_0:BaseRig1:Shoulder_J_L_RK" 
+		"rotateZ" " -av"
 		2 "|Puni_the_Panda_4_0:BaseRig1:Transform_Ctrl_Grp|Puni_the_Panda_4_0:BaseRig1:Transform_Ctrl" 
 		"LArmIKFKSwitch" " -k 1 1"
 		2 "|Puni_the_Panda_4_0:BaseRig1:Transform_Ctrl_Grp|Puni_the_Panda_4_0:BaseRig1:Transform_Ctrl" 
