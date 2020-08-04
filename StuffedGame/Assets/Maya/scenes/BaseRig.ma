@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: BaseRig.ma
-//Last modified: Tue, Aug 04, 2020 03:19:28 PM
+//Last modified: Tue, Aug 04, 2020 03:21:41 PM
 //Codeset: UTF-8
 requires maya "2020";
 requires "mtoa" "4.0.0";
@@ -11,7 +11,7 @@ fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Mac OS X 10.15.6";
 fileInfo "license" "student";
-fileInfo "UUID" "A0E75D98-5542-70CF-094C-058A95D3FBEB";
+fileInfo "UUID" "72743194-3E4B-46FB-C068-E4B851ADD1A4";
 createNode transform -s -n "persp";
 	rename -uid "425F33C5-074E-0DDA-57FF-A083BEB032D3";
 	setAttr ".v" no;
@@ -4838,7 +4838,7 @@ createNode transform -n "Jaw_J_CTRL" -p "Jaw_J_GRP";
 	setAttr ".rp" -type "double3" 0.57405601912158111 4.5129279113493288 1.0197283357655051e-15 ;
 	setAttr ".sp" -type "double3" 0.57405601912158111 4.5129279113493288 1.0197283357655051e-15 ;
 	setAttr ".mnrl" -type "double3" -45 -45 -29.999999999999996 ;
-	setAttr ".mxrl" -type "double3" 45 45 10 ;
+	setAttr ".mxrl" -type "double3" 45 45 25 ;
 	setAttr ".mrze" yes;
 	setAttr ".xrze" yes;
 createNode nurbsCurve -n "Jaw_J_CTRLShape" -p "Jaw_J_CTRL";
@@ -5352,26 +5352,26 @@ createNode nurbsCurve -n "Wrist_J_R_CTRLShape" -p "Wrist_J_R_CTRL";
 		-0.91952193960895978 1.0974486852102481 0.44186604755512804 -1.2441045022721235 0.49686396996855375 
 		-6.5959325758737654e-16 0 0 0 0 0 0 0 0 0;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9DFE6F29-664E-E181-0284-C89A88DF0191";
+	rename -uid "FA7CEB9A-8D43-EE41-0406-CAB4C8D92FAE";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C62740FF-6643-ADC6-0F62-39A3B1F658C3";
+	rename -uid "54004CE6-7F49-1F9B-4C80-F58B80EDC43B";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "E7C5F4A4-1A43-5AA7-BC6D-F3BC66616717";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "84D3F41D-BD43-6559-BC8C-32B4CDDB52C8";
+	rename -uid "07668909-254F-C4DE-A09D-8B85979FC710";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "FF83EB3D-CE4E-B5AE-86C3-BEBE5F5E5A78";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "2842C7D7-8349-408C-AB87-C0AF842BFEBB";
+	rename -uid "27BFA025-7746-D736-DF56-09BDDA748929";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "32B13D6D-324F-764F-CB35-F59357CD234A";
+	rename -uid "04A1AADD-BF43-9BB7-0D3F-EA80EE7E96A9";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "0A41BEBB-A04A-3F4E-1C8A-B69EEECED819";
 	setAttr ".b" -type "string" (
