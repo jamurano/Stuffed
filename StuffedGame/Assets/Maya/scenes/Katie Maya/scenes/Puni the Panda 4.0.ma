@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Puni the Panda 4.0.ma
-//Last modified: Tue, Aug 04, 2020 04:43:09 PM
+//Last modified: Wed, Aug 05, 2020 04:40:24 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "BaseRig1" -rfn "BaseRigRN1" -op "v=0;p=17;f=0" -typ "mayaAscii"
 		 "/Users/Katie/StuffedAgain/Stuffed/StuffedGame/Assets/Maya/scenes/BaseRig.ma";
@@ -15,12 +15,12 @@ fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Mac OS X 10.15.6";
 fileInfo "license" "student";
-fileInfo "UUID" "4047B554-6C46-90BF-8A2C-D687DBA4315A";
+fileInfo "UUID" "A1490CC1-C646-4A3F-AC6B-27B386830352";
 createNode transform -s -n "persp";
 	rename -uid "425F33C5-074E-0DDA-57FF-A083BEB032D3";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.4824241522239681 5.8090877819828854 26.490048615786783 ;
-	setAttr ".r" -type "double3" 357.86164682438539 14402.599999983193 -6.218422293914132e-18 ;
+	setAttr ".t" -type "double3" -5.3153411405416229 5.3751273043153853 26.247547059634108 ;
+	setAttr ".r" -type "double3" 357.86164682437777 14390.599999982889 2.5186280757900824e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "77E8AA9E-234E-68FC-26D2-21B85028178A";
 	setAttr -k off ".v" no;
@@ -38320,7 +38320,7 @@ createNode mesh -n "NeutralShapeOrig" -p "Neutral";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode fosterParent -n "BaseRigRN1fosterParent1";
-	rename -uid "32F01380-D54A-402A-DFBE-E498CA63262B";
+	rename -uid "CED897BC-9445-D90C-897C-2B807C7567AF";
 createNode transform -n "Puni_the_Panda_2_10:EyeMesh_R" -p "BaseRigRN1fosterParent1";
 	rename -uid "03EB3416-1949-F1C0-9BA4-3F9B00DC1CDD";
 	setAttr ".t" -type "double3" -0.76422435045243142 -5.6625080108642578 -0.76102703809738104 ;
